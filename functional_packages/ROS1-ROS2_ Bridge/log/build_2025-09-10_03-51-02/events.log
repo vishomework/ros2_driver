@@ -1,0 +1,2552 @@
+[0.000000] (-) TimerEvent: {}
+[0.000402] (ros1_bridge) JobQueued: {'identifier': 'ros1_bridge', 'dependencies': OrderedDict()}
+[0.000454] (ros1_bridge) JobStarted: {'identifier': 'ros1_bridge'}
+[0.008627] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'cmake'}
+[0.009013] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '/ros-humble-ros1-bridge/src/ros1_bridge', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/ros-humble-ros1-bridge/install/ros1_bridge'], 'cwd': '/ros-humble-ros1-bridge/build/ros1_bridge', 'env': OrderedDict([('ADD_ros_tutorials', '1'), ('ROS_PACKAGE_PATH', '/ros_tutorials/install/ros_tutorials/share:/ros_tutorials/install/turtlesim/share:/ros_tutorials/install/rospy_tutorials/share:/ros_tutorials/install/roscpp_tutorials/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros-humble-ros1-bridge/src/ros1_bridge'), ('ROS_PYTHON_VERSION', '3'), ('MAKEFLAGS', '-j 28'), ('COLCON_PREFIX_PATH', '/ros_tutorials/install'), ('ROS_DISTRO', 'humble'), ('ADD_octomap_msgs', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ros_tutorials/install/ros_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/ros_tutorials/lib/pkgconfig:/ros_tutorials/install/turtlesim/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/turtlesim/lib/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ADD_grid_map', '0'), ('ADD_example_custom_msgs', '0'), ('PWD', '/ros-humble-ros1-bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros_tutorials/install/turtlesim/lib/python3/dist-packages:/ros_tutorials/install/rospy_tutorials/lib/python3/dist-packages:/ros_tutorials/install/roscpp_tutorials/lib/python3/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ros_tutorials/install/turtlesim:/ros_tutorials/install/rospy_tutorials:/ros_tutorials/install/roscpp_tutorials')]), 'shell': False}
+[0.067138] (ros1_bridge) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099973] (-) TimerEvent: {}
+[0.133413] (ros1_bridge) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.138573] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200189] (-) TimerEvent: {}
+[0.242902] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.251491] (ros1_bridge) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.251583] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.251879] (ros1_bridge) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.253976] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300406] (-) TimerEvent: {}
+[0.357767] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.363076] (ros1_bridge) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.363318] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.363720] (ros1_bridge) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.364358] (ros1_bridge) StderrLine: {'line': b'Using ACTION_GOAL_RESPONSE_CB_CONST\n'}
+[0.368384] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw: 6.1.2 (/opt/ros/humble/share/rmw/cmake)\n'}
+[0.400528] (-) TimerEvent: {}
+[0.500804] (-) TimerEvent: {}
+[0.517629] (ros1_bridge) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.600987] (-) TimerEvent: {}
+[0.641376] (ros1_bridge) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.694891] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.701167] (-) TimerEvent: {}
+[0.702081] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.715274] (ros1_bridge) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.724230] (ros1_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.740971] (ros1_bridge) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.792168] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.795195] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.801239] (-) TimerEvent: {}
+[0.901454] (-) TimerEvent: {}
+[0.944553] (ros1_bridge) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.974352] (ros1_bridge) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.001536] (-) TimerEvent: {}
+[1.007686] (ros1_bridge) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.016495] (ros1_bridge) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101732] (-) TimerEvent: {}
+[1.113321] (ros1_bridge) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.113780] (ros1_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201927] (-) TimerEvent: {}
+[1.221298] (ros1_bridge) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.222165] (ros1_bridge) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.302127] (-) TimerEvent: {}
+[1.308889] (ros1_bridge) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.14 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[1.352725] (ros1_bridge) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.358256] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'roscpp'\n"}
+[1.377796] (ros1_bridge) StdoutLine: {'line': b'--   Found roscpp, version 1.15.14\n'}
+[1.402345] (-) TimerEvent: {}
+[1.450224] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'std_msgs'\n"}
+[1.471914] (ros1_bridge) StdoutLine: {'line': b'--   Found std_msgs, version 0.5.13\n'}
+[1.502538] (-) TimerEvent: {}
+[1.540960] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'actionlib'\n"}
+[1.562792] (ros1_bridge) StdoutLine: {'line': b'--   Found actionlib, version 1.13.2\n'}
+[1.602765] (-) TimerEvent: {}
+[1.703104] (-) TimerEvent: {}
+[1.803316] (-) TimerEvent: {}
+[1.903494] (-) TimerEvent: {}
+[1.937555] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'actionlib_msgs'\n"}
+[1.948717] (ros1_bridge) StdoutLine: {'line': b'--   Found actionlib_msgs, version 1.13.1\n'}
+[2.003689] (-) TimerEvent: {}
+[2.005001] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'bond'\n"}
+[2.017699] (ros1_bridge) StdoutLine: {'line': b'--   Found bond, version 1.8.6\n'}
+[2.070383] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'diagnostic_msgs'\n"}
+[2.093044] (ros1_bridge) StdoutLine: {'line': b'--   Found diagnostic_msgs, version 1.13.1\n'}
+[2.103818] (-) TimerEvent: {}
+[2.176305] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'dynamic_reconfigure'\n"}
+[2.203706] (ros1_bridge) StdoutLine: {'line': b'--   Found dynamic_reconfigure, version 1.7.2\n'}
+[2.203999] (-) TimerEvent: {}
+[2.258095] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'geometry_msgs'\n"}
+[2.275016] (ros1_bridge) StdoutLine: {'line': b'--   Found geometry_msgs, version 1.13.1\n'}
+[2.304169] (-) TimerEvent: {}
+[2.347972] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'map_msgs'\n"}
+[2.375847] (ros1_bridge) StdoutLine: {'line': b'--   Found map_msgs, version 1.14.1\n'}
+[2.404303] (-) TimerEvent: {}
+[2.441861] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'move_base_msgs'\n"}
+[2.454159] (ros1_bridge) StdoutLine: {'line': b'--   Found move_base_msgs, version 1.14.1\n'}
+[2.504527] (-) TimerEvent: {}
+[2.538875] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'nav_msgs'\n"}
+[2.566402] (ros1_bridge) StdoutLine: {'line': b'--   Found nav_msgs, version 1.13.1\n'}
+[2.604723] (-) TimerEvent: {}
+[2.664005] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'rosgraph_msgs'\n"}
+[2.689482] (ros1_bridge) StdoutLine: {'line': b'--   Found rosgraph_msgs, version 1.11.3\n'}
+[2.704930] (-) TimerEvent: {}
+[2.736094] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'rospy_tutorials'\n"}
+[2.749907] (ros1_bridge) StdoutLine: {'line': b'--   Found rospy_tutorials, version 0.10.3\n'}
+[2.805150] (-) TimerEvent: {}
+[2.831140] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'sensor_msgs'\n"}
+[2.856976] (ros1_bridge) StdoutLine: {'line': b'--   Found sensor_msgs, version 1.13.1\n'}
+[2.905370] (-) TimerEvent: {}
+[2.944777] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'shape_msgs'\n"}
+[2.971641] (ros1_bridge) StdoutLine: {'line': b'--   Found shape_msgs, version 1.13.1\n'}
+[3.005468] (-) TimerEvent: {}
+[3.019937] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'stereo_msgs'\n"}
+[3.031745] (ros1_bridge) StdoutLine: {'line': b'--   Found stereo_msgs, version 1.13.1\n'}
+[3.091612] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'tf'\n"}
+[3.105664] (-) TimerEvent: {}
+[3.116416] (ros1_bridge) StdoutLine: {'line': b'--   Found tf, version 1.13.2\n'}
+[3.205856] (-) TimerEvent: {}
+[3.210203] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'tf2_msgs'\n"}
+[3.234975] (ros1_bridge) StdoutLine: {'line': b'--   Found tf2_msgs, version 0.7.5\n'}
+[3.304086] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'trajectory_msgs'\n"}
+[3.305979] (-) TimerEvent: {}
+[3.328119] (ros1_bridge) StdoutLine: {'line': b'--   Found trajectory_msgs, version 1.13.1\n'}
+[3.403938] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'turtlesim'\n"}
+[3.406087] (-) TimerEvent: {}
+[3.428178] (ros1_bridge) StdoutLine: {'line': b'--   Found turtlesim, version 0.10.3\n'}
+[3.506240] (-) TimerEvent: {}
+[3.506770] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'visualization_msgs'\n"}
+[3.531111] (ros1_bridge) StdoutLine: {'line': b'--   Found visualization_msgs, version 1.13.1\n'}
+[3.580998] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'roscpp_tutorials'\n"}
+[3.592659] (ros1_bridge) StdoutLine: {'line': b'--   Found roscpp_tutorials, version 0.10.3\n'}
+[3.606314] (-) TimerEvent: {}
+[3.629821] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'rviz'\n"}
+[3.643402] (ros1_bridge) StdoutLine: {'line': b'--   Found rviz, version 1.14.14\n'}
+[3.706467] (-) TimerEvent: {}
+[3.716233] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'std_srvs'\n"}
+[3.732862] (ros1_bridge) StdoutLine: {'line': b'--   Found std_srvs, version 1.11.3\n'}
+[3.801694] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'topic_tools'\n"}
+[3.806586] (-) TimerEvent: {}
+[3.825497] (ros1_bridge) StdoutLine: {'line': b'--   Found topic_tools, version 1.15.14\n'}
+[3.906799] (-) TimerEvent: {}
+[3.920575] (ros1_bridge) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.925426] (ros1_bridge) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.9.0 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[3.953420] (ros1_bridge) StdoutLine: {'line': b"-- Checking for module 'roslaunch'\n"}
+[3.975074] (ros1_bridge) StdoutLine: {'line': b'--   Found roslaunch, version 1.15.14\n'}
+[4.006901] (-) TimerEvent: {}
+[4.107173] (-) TimerEvent: {}
+[4.116889] (ros1_bridge) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.132705] (ros1_bridge) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.137034] (ros1_bridge) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.137153] (ros1_bridge) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.137195] (ros1_bridge) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.137226] (ros1_bridge) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.154441] (ros1_bridge) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.207280] (-) TimerEvent: {}
+[4.211631] (ros1_bridge) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[4.245328] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.248959] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.249046] (ros1_bridge) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.249095] (ros1_bridge) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.252438] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.252531] (ros1_bridge) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.253275] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.254400] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.255234] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.258593] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.258676] (ros1_bridge) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.259344] (ros1_bridge) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.263077] (ros1_bridge) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[4.273140] (ros1_bridge) StdoutLine: {'line': b'-- Found action_tutorials_interfaces: 0.20.5 (/opt/ros/humble/share/action_tutorials_interfaces/cmake)\n'}
+[4.287941] (ros1_bridge) StdoutLine: {'line': b'-- Found actionlib_msgs: 4.9.0 (/opt/ros/humble/share/actionlib_msgs/cmake)\n'}
+[4.288230] (ros1_bridge) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[4.302893] (ros1_bridge) StdoutLine: {'line': b'-- Found composition_interfaces: 1.2.2 (/opt/ros/humble/share/composition_interfaces/cmake)\n'}
+[4.303025] (ros1_bridge) StdoutLine: {'line': b'-- Found diagnostic_msgs: 4.9.0 (/opt/ros/humble/share/diagnostic_msgs/cmake)\n'}
+[4.307341] (-) TimerEvent: {}
+[4.313091] (ros1_bridge) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[4.313615] (ros1_bridge) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.325494] (ros1_bridge) StdoutLine: {'line': b'-- Found lifecycle_msgs: 1.2.2 (/opt/ros/humble/share/lifecycle_msgs/cmake)\n'}
+[4.332445] (ros1_bridge) StdoutLine: {'line': b'-- Found logging_demo: 0.20.5 (/opt/ros/humble/share/logging_demo/cmake)\n'}
+[4.374804] (ros1_bridge) StdoutLine: {'line': b'-- Found map_msgs: 2.1.0 (/opt/ros/humble/share/map_msgs/cmake)\n'}
+[4.374986] (ros1_bridge) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[4.386409] (ros1_bridge) StdoutLine: {'line': b'-- Found pcl_msgs: 1.0.0 (/opt/ros/humble/share/pcl_msgs/cmake)\n'}
+[4.395271] (ros1_bridge) StdoutLine: {'line': b'-- Found pendulum_msgs: 0.20.5 (/opt/ros/humble/share/pendulum_msgs/cmake)\n'}
+[4.395522] (ros1_bridge) StdoutLine: {'line': b'-- Found rcl_interfaces: 1.2.2 (/opt/ros/humble/share/rcl_interfaces/cmake)\n'}
+[4.395864] (ros1_bridge) StdoutLine: {'line': b'-- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)\n'}
+[4.407545] (-) TimerEvent: {}
+[4.409610] (ros1_bridge) StdoutLine: {'line': b'-- Found rosbag2_interfaces: 0.15.15 (/opt/ros/humble/share/rosbag2_interfaces/cmake)\n'}
+[4.409856] (ros1_bridge) StdoutLine: {'line': b'-- Found rosgraph_msgs: 1.2.2 (/opt/ros/humble/share/rosgraph_msgs/cmake)\n'}
+[4.409940] (ros1_bridge) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.425872] (ros1_bridge) StdoutLine: {'line': b'-- Found shape_msgs: 4.9.0 (/opt/ros/humble/share/shape_msgs/cmake)\n'}
+[4.426071] (ros1_bridge) StdoutLine: {'line': b'-- Found statistics_msgs: 1.2.2 (/opt/ros/humble/share/statistics_msgs/cmake)\n'}
+[4.426207] (ros1_bridge) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[4.438187] (ros1_bridge) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[4.460093] (ros1_bridge) StdoutLine: {'line': b'-- Found stereo_msgs: 4.9.0 (/opt/ros/humble/share/stereo_msgs/cmake)\n'}
+[4.481301] (ros1_bridge) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.16 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[4.498427] (ros1_bridge) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.9.0 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[4.507658] (-) TimerEvent: {}
+[4.509275] (ros1_bridge) StdoutLine: {'line': b'-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[4.509607] (ros1_bridge) StdoutLine: {'line': b'-- Found unique_identifier_msgs: 2.2.1 (/opt/ros/humble/share/unique_identifier_msgs/cmake)\n'}
+[4.528433] (ros1_bridge) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[4.607838] (-) TimerEvent: {}
+[4.650748] (ros1_bridge) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.708014] (-) TimerEvent: {}
+[4.786862] (ros1_bridge) StdoutLine: {'line': b'-- Generating done\n'}
+[4.808212] (-) TimerEvent: {}
+[4.816112] (ros1_bridge) StdoutLine: {'line': b'-- Build files have been written to: /ros-humble-ros1-bridge/build/ros1_bridge\n'}
+[4.825395] (ros1_bridge) CommandEnded: {'returncode': 0}
+[4.826116] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'build'}
+[4.827631] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ros-humble-ros1-bridge/build/ros1_bridge'], 'cwd': '/ros-humble-ros1-bridge/build/ros1_bridge', 'env': OrderedDict([('ADD_ros_tutorials', '1'), ('ROS_PACKAGE_PATH', '/ros_tutorials/install/ros_tutorials/share:/ros_tutorials/install/turtlesim/share:/ros_tutorials/install/rospy_tutorials/share:/ros_tutorials/install/roscpp_tutorials/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros-humble-ros1-bridge/src/ros1_bridge'), ('ROS_PYTHON_VERSION', '3'), ('MAKEFLAGS', '-j 28'), ('COLCON_PREFIX_PATH', '/ros_tutorials/install'), ('ROS_DISTRO', 'humble'), ('ADD_octomap_msgs', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ros_tutorials/install/ros_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/ros_tutorials/lib/pkgconfig:/ros_tutorials/install/turtlesim/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/turtlesim/lib/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ADD_grid_map', '0'), ('ADD_example_custom_msgs', '0'), ('PWD', '/ros-humble-ros1-bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros_tutorials/install/turtlesim/lib/python3/dist-packages:/ros_tutorials/install/rospy_tutorials/lib/python3/dist-packages:/ros_tutorials/install/roscpp_tutorials/lib/python3/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ros_tutorials/install/turtlesim:/ros_tutorials/install/rospy_tutorials:/ros_tutorials/install/roscpp_tutorials')]), 'shell': False}
+[4.892017] (ros1_bridge) StdoutLine: {'line': b'[  0%] Generating factories for interface types\n'}
+[4.896940] (ros1_bridge) StdoutLine: {'line': b'[  0%] Building CXX object CMakeFiles/test_ros2_client_cpp.dir/test/test_ros2_client.cpp.o\n'}
+[4.899038] (ros1_bridge) StdoutLine: {'line': b'[  0%] Building CXX object CMakeFiles/simple_bridge.dir/src/simple_bridge.cpp.o\n'}
+[4.899553] (ros1_bridge) StdoutLine: {'line': b'[  1%] Building CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\n'}
+[4.899798] (ros1_bridge) StdoutLine: {'line': b'[  1%] Building CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\n'}
+[4.899916] (ros1_bridge) StdoutLine: {'line': b'[  1%] Building CXX object CMakeFiles/test_ros1_server.dir/test/test_ros1_server.cpp.o\n'}
+[4.902682] (ros1_bridge) StdoutLine: {'line': b'[  2%] Building CXX object CMakeFiles/test_ros1_client.dir/test/test_ros1_client.cpp.o\n'}
+[4.903667] (ros1_bridge) StdoutLine: {'line': b'[  2%] Building CXX object CMakeFiles/simple_bridge_1_to_2.dir/src/simple_bridge_1_to_2.cpp.o\n'}
+[4.905917] (ros1_bridge) StdoutLine: {'line': b'[  3%] Building CXX object CMakeFiles/simple_bridge_2_to_1.dir/src/simple_bridge_2_to_1.cpp.o\n'}
+[4.907235] (ros1_bridge) StdoutLine: {'line': b'[  4%] Building CXX object CMakeFiles/test_ros2_server_cpp.dir/test/test_ros2_server.cpp.o\n'}
+[4.907839] (ros1_bridge) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_ros1_bridge\n'}
+[4.908307] (-) TimerEvent: {}
+[5.008465] (-) TimerEvent: {}
+[5.108664] (-) TimerEvent: {}
+[5.134731] (ros1_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[5.135372] (ros1_bridge) StdoutLine: {'line': b'creating ros1_bridge.egg-info\n'}
+[5.135634] (ros1_bridge) StdoutLine: {'line': b'writing ros1_bridge.egg-info/PKG-INFO\n'}
+[5.135890] (ros1_bridge) StdoutLine: {'line': b'writing dependency_links to ros1_bridge.egg-info/dependency_links.txt\n'}
+[5.136108] (ros1_bridge) StdoutLine: {'line': b'writing top-level names to ros1_bridge.egg-info/top_level.txt\n'}
+[5.136378] (ros1_bridge) StdoutLine: {'line': b"writing manifest file 'ros1_bridge.egg-info/SOURCES.txt'\n"}
+[5.138761] (ros1_bridge) StdoutLine: {'line': b"reading manifest file 'ros1_bridge.egg-info/SOURCES.txt'\n"}
+[5.139271] (ros1_bridge) StdoutLine: {'line': b"writing manifest file 'ros1_bridge.egg-info/SOURCES.txt'\n"}
+[5.160064] (ros1_bridge) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_ros1_bridge_egg\n'}
+[5.208766] (-) TimerEvent: {}
+[5.308975] (-) TimerEvent: {}
+[5.360690] (ros1_bridge) StdoutLine: {'line': b'[  4%] Linking CXX static library libgtest_main.a\n'}
+[5.389656] (ros1_bridge) StdoutLine: {'line': b'[  4%] Built target gtest_main\n'}
+[5.409160] (-) TimerEvent: {}
+[5.509467] (-) TimerEvent: {}
+[5.609735] (-) TimerEvent: {}
+[5.709953] (-) TimerEvent: {}
+[5.810255] (-) TimerEvent: {}
+[5.910552] (-) TimerEvent: {}
+[6.010747] (-) TimerEvent: {}
+[6.110938] (-) TimerEvent: {}
+[6.211246] (-) TimerEvent: {}
+[6.289528] (ros1_bridge) StdoutLine: {'line': b'[  4%] Linking CXX executable test_ros1_client\n'}
+[6.311353] (-) TimerEvent: {}
+[6.327970] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX executable test_ros1_server\n'}
+[6.374435] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target test_ros1_client\n'}
+[6.411468] (-) TimerEvent: {}
+[6.422786] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target test_ros1_server\n'}
+[6.511600] (-) TimerEvent: {}
+[6.611893] (-) TimerEvent: {}
+[6.712187] (-) TimerEvent: {}
+[6.812477] (-) TimerEvent: {}
+[6.912704] (-) TimerEvent: {}
+[7.012981] (-) TimerEvent: {}
+[7.113240] (-) TimerEvent: {}
+[7.213425] (-) TimerEvent: {}
+[7.313657] (-) TimerEvent: {}
+[7.413953] (-) TimerEvent: {}
+[7.514300] (-) TimerEvent: {}
+[7.544372] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX executable test_ros2_server_cpp\n'}
+[7.614402] (-) TimerEvent: {}
+[7.641260] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX executable test_ros2_client_cpp\n'}
+[7.689021] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target test_ros2_server_cpp\n'}
+[7.714617] (-) TimerEvent: {}
+[7.739509] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target test_ros2_client_cpp\n'}
+[7.814823] (-) TimerEvent: {}
+[7.915125] (-) TimerEvent: {}
+[8.015351] (-) TimerEvent: {}
+[8.115565] (-) TimerEvent: {}
+[8.215884] (-) TimerEvent: {}
+[8.316121] (-) TimerEvent: {}
+[8.416420] (-) TimerEvent: {}
+[8.516642] (-) TimerEvent: {}
+[8.616955] (-) TimerEvent: {}
+[8.717252] (-) TimerEvent: {}
+[8.817481] (-) TimerEvent: {}
+[8.917654] (-) TimerEvent: {}
+[9.017947] (-) TimerEvent: {}
+[9.118260] (-) TimerEvent: {}
+[9.218468] (-) TimerEvent: {}
+[9.318657] (-) TimerEvent: {}
+[9.418839] (-) TimerEvent: {}
+[9.519026] (-) TimerEvent: {}
+[9.619191] (-) TimerEvent: {}
+[9.693064] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX executable simple_bridge_1_to_2\n'}
+[9.719334] (-) TimerEvent: {}
+[9.814904] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target simple_bridge_1_to_2\n'}
+[9.819420] (-) TimerEvent: {}
+[9.827815] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX static library libgtest.a\n'}
+[9.860150] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target gtest\n'}
+[9.919557] (-) TimerEvent: {}
+[10.019763] (-) TimerEvent: {}
+[10.119949] (-) TimerEvent: {}
+[10.220230] (-) TimerEvent: {}
+[10.320402] (-) TimerEvent: {}
+[10.420600] (-) TimerEvent: {}
+[10.520884] (-) TimerEvent: {}
+[10.621174] (-) TimerEvent: {}
+[10.721455] (-) TimerEvent: {}
+[10.821702] (-) TimerEvent: {}
+[10.921990] (-) TimerEvent: {}
+[11.022243] (-) TimerEvent: {}
+[11.122418] (-) TimerEvent: {}
+[11.222635] (-) TimerEvent: {}
+[11.322911] (-) TimerEvent: {}
+[11.423122] (-) TimerEvent: {}
+[11.523337] (-) TimerEvent: {}
+[11.623575] (-) TimerEvent: {}
+[11.723754] (-) TimerEvent: {}
+[11.823926] (-) TimerEvent: {}
+[11.924104] (-) TimerEvent: {}
+[12.024280] (-) TimerEvent: {}
+[12.124455] (-) TimerEvent: {}
+[12.224626] (-) TimerEvent: {}
+[12.324794] (-) TimerEvent: {}
+[12.424969] (-) TimerEvent: {}
+[12.431281] (ros1_bridge) StdoutLine: {'line': b'[  5%] Linking CXX executable simple_bridge_2_to_1\n'}
+[12.525083] (-) TimerEvent: {}
+[12.567229] (ros1_bridge) StdoutLine: {'line': b'[  5%] Built target simple_bridge_2_to_1\n'}
+[12.625200] (-) TimerEvent: {}
+[12.725439] (-) TimerEvent: {}
+[12.825716] (-) TimerEvent: {}
+[12.925998] (-) TimerEvent: {}
+[13.026203] (-) TimerEvent: {}
+[13.089395] (ros1_bridge) StdoutLine: {'line': b'[  6%] Linking CXX executable simple_bridge\n'}
+[13.092722] (ros1_bridge) StdoutLine: {'line': b'[  6%] Building CXX object CMakeFiles/ros1_bridge.dir/src/builtin_interfaces_factories.cpp.o\n'}
+[13.094007] (ros1_bridge) StdoutLine: {'line': b'[  6%] Building CXX object CMakeFiles/ros1_bridge.dir/src/bridge.cpp.o\n'}
+[13.095109] (ros1_bridge) StdoutLine: {'line': b'[  8%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_msgs__msg__GoalStatus__factories.cpp.o\n'}
+[13.095403] (ros1_bridge) StdoutLine: {'line': b'[  8%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/get_mappings.cpp.o\n'}
+[13.095476] (ros1_bridge) StdoutLine: {'line': b'[  8%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_tutorials_interfaces_factories.cpp.o\n'}
+[13.095537] (ros1_bridge) StdoutLine: {'line': b'[  9%] Building CXX object CMakeFiles/ros1_bridge.dir/src/convert_builtin_interfaces.cpp.o\n'}
+[13.095588] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_tutorials_interfaces__action__Fibonacci__factories.cpp.o\n'}
+[13.095830] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/get_factory.cpp.o\n'}
+[13.096298] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/actionlib_msgs__msg__GoalID__factories.cpp.o\n'}
+[13.096383] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_msgs_factories.cpp.o\n'}
+[13.096607] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_msgs__msg__GoalInfo__factories.cpp.o\n'}
+[13.097402] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/actionlib_msgs__msg__GoalStatusArray__factories.cpp.o\n'}
+[13.097649] (ros1_bridge) StdoutLine: {'line': b'[ 10%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_msgs__srv__CancelGoal__factories.cpp.o\n'}
+[13.097711] (ros1_bridge) StdoutLine: {'line': b'[ 11%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/composition_interfaces__srv__LoadNode__factories.cpp.o\n'}
+[13.097762] (ros1_bridge) StdoutLine: {'line': b'[ 11%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/action_msgs__msg__GoalStatusArray__factories.cpp.o\n'}
+[13.097807] (ros1_bridge) StdoutLine: {'line': b'[ 11%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/composition_interfaces_factories.cpp.o\n'}
+[13.098103] (ros1_bridge) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs__msg__KeyValue__factories.cpp.o\n'}
+[13.098241] (ros1_bridge) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/composition_interfaces__srv__UnloadNode__factories.cpp.o\n'}
+[13.098476] (ros1_bridge) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs__msg__DiagnosticStatus__factories.cpp.o\n'}
+[13.098797] (ros1_bridge) StdoutLine: {'line': b'[ 12%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs__srv__AddDiagnostics__factories.cpp.o\n'}
+[13.098888] (ros1_bridge) StdoutLine: {'line': b'[ 13%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/actionlib_msgs__msg__GoalStatus__factories.cpp.o\n'}
+[13.098927] (ros1_bridge) StdoutLine: {'line': b'[ 13%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/actionlib_msgs_factories.cpp.o\n'}
+[13.100000] (ros1_bridge) StdoutLine: {'line': b'[ 13%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/composition_interfaces__srv__ListNodes__factories.cpp.o\n'}
+[13.100118] (ros1_bridge) StdoutLine: {'line': b'[ 13%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs__srv__SelfTest__factories.cpp.o\n'}
+[13.100797] (ros1_bridge) StdoutLine: {'line': b'[ 14%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs_factories.cpp.o\n'}
+[13.100937] (ros1_bridge) StdoutLine: {'line': b'[ 14%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/diagnostic_msgs__msg__DiagnosticArray__factories.cpp.o\n'}
+[13.111533] (ros1_bridge) StdoutLine: {'line': b'[ 15%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces_factories.cpp.o\n'}
+[13.127194] (-) TimerEvent: {}
+[13.227363] (-) TimerEvent: {}
+[13.327560] (-) TimerEvent: {}
+[13.412347] (ros1_bridge) StdoutLine: {'line': b'[ 15%] Built target simple_bridge\n'}
+[13.428370] (ros1_bridge) StdoutLine: {'line': b'[ 15%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__action__Fibonacci__factories.cpp.o\n'}
+[13.428528] (-) TimerEvent: {}
+[13.528663] (-) TimerEvent: {}
+[13.628845] (-) TimerEvent: {}
+[13.729020] (-) TimerEvent: {}
+[13.833106] (-) TimerEvent: {}
+[13.933283] (-) TimerEvent: {}
+[14.033864] (-) TimerEvent: {}
+[14.135106] (-) TimerEvent: {}
+[14.235279] (-) TimerEvent: {}
+[14.335455] (-) TimerEvent: {}
+[14.435633] (-) TimerEvent: {}
+[14.535807] (-) TimerEvent: {}
+[14.635981] (-) TimerEvent: {}
+[14.736118] (-) TimerEvent: {}
+[14.771486] (ros1_bridge) StdoutLine: {'line': b'[ 15%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Bool__factories.cpp.o\n'}
+[14.836224] (-) TimerEvent: {}
+[14.936402] (-) TimerEvent: {}
+[15.036574] (-) TimerEvent: {}
+[15.136749] (-) TimerEvent: {}
+[15.236921] (-) TimerEvent: {}
+[15.337100] (-) TimerEvent: {}
+[15.437275] (-) TimerEvent: {}
+[15.537440] (-) TimerEvent: {}
+[15.637592] (-) TimerEvent: {}
+[15.737758] (-) TimerEvent: {}
+[15.840104] (-) TimerEvent: {}
+[15.940284] (-) TimerEvent: {}
+[16.040463] (-) TimerEvent: {}
+[16.140639] (-) TimerEvent: {}
+[16.240817] (-) TimerEvent: {}
+[16.340990] (-) TimerEvent: {}
+[16.441170] (-) TimerEvent: {}
+[16.541344] (-) TimerEvent: {}
+[16.641524] (-) TimerEvent: {}
+[16.741719] (-) TimerEvent: {}
+[16.841909] (-) TimerEvent: {}
+[16.945095] (-) TimerEvent: {}
+[17.045291] (-) TimerEvent: {}
+[17.145475] (-) TimerEvent: {}
+[17.245661] (-) TimerEvent: {}
+[17.345858] (-) TimerEvent: {}
+[17.446043] (-) TimerEvent: {}
+[17.548126] (-) TimerEvent: {}
+[17.648324] (-) TimerEvent: {}
+[17.748523] (-) TimerEvent: {}
+[17.848717] (-) TimerEvent: {}
+[17.948928] (-) TimerEvent: {}
+[18.049124] (-) TimerEvent: {}
+[18.149321] (-) TimerEvent: {}
+[18.249514] (-) TimerEvent: {}
+[18.349699] (-) TimerEvent: {}
+[18.449897] (-) TimerEvent: {}
+[18.452701] (ros1_bridge) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Byte__factories.cpp.o\n'}
+[18.550017] (-) TimerEvent: {}
+[18.619111] (ros1_bridge) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__ByteMultiArray__factories.cpp.o\n'}
+[18.650117] (-) TimerEvent: {}
+[18.750319] (-) TimerEvent: {}
+[18.850523] (-) TimerEvent: {}
+[18.950774] (-) TimerEvent: {}
+[19.050999] (-) TimerEvent: {}
+[19.151215] (-) TimerEvent: {}
+[19.251408] (-) TimerEvent: {}
+[19.351611] (-) TimerEvent: {}
+[19.451815] (-) TimerEvent: {}
+[19.552015] (-) TimerEvent: {}
+[19.652236] (-) TimerEvent: {}
+[19.752449] (-) TimerEvent: {}
+[19.852669] (-) TimerEvent: {}
+[19.956129] (-) TimerEvent: {}
+[20.056348] (-) TimerEvent: {}
+[20.156547] (-) TimerEvent: {}
+[20.256752] (-) TimerEvent: {}
+[20.356956] (-) TimerEvent: {}
+[20.457122] (-) TimerEvent: {}
+[20.557323] (-) TimerEvent: {}
+[20.657547] (-) TimerEvent: {}
+[20.757748] (-) TimerEvent: {}
+[20.857944] (-) TimerEvent: {}
+[20.958118] (-) TimerEvent: {}
+[21.058316] (-) TimerEvent: {}
+[21.158519] (-) TimerEvent: {}
+[21.258730] (-) TimerEvent: {}
+[21.358969] (-) TimerEvent: {}
+[21.459247] (-) TimerEvent: {}
+[21.559481] (-) TimerEvent: {}
+[21.659679] (-) TimerEvent: {}
+[21.759873] (-) TimerEvent: {}
+[21.860066] (-) TimerEvent: {}
+[21.962147] (-) TimerEvent: {}
+[22.062343] (-) TimerEvent: {}
+[22.162542] (-) TimerEvent: {}
+[22.211205] (ros1_bridge) StdoutLine: {'line': b'[ 16%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Char__factories.cpp.o\n'}
+[22.213068] (ros1_bridge) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Float32__factories.cpp.o\n'}
+[22.213256] (ros1_bridge) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Empty__factories.cpp.o\n'}
+[22.262643] (-) TimerEvent: {}
+[22.363428] (-) TimerEvent: {}
+[22.405634] (ros1_bridge) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Float32MultiArray__factories.cpp.o\n'}
+[22.463542] (-) TimerEvent: {}
+[22.542623] (ros1_bridge) StdoutLine: {'line': b'[ 17%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Float64__factories.cpp.o\n'}
+[22.563649] (-) TimerEvent: {}
+[22.665140] (-) TimerEvent: {}
+[22.680123] (ros1_bridge) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Float64MultiArray__factories.cpp.o\n'}
+[22.765244] (-) TimerEvent: {}
+[22.820109] (ros1_bridge) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int16__factories.cpp.o\n'}
+[22.865360] (-) TimerEvent: {}
+[22.875759] (ros1_bridge) StdoutLine: {'line': b'[ 18%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int16MultiArray__factories.cpp.o\n'}
+[22.965458] (-) TimerEvent: {}
+[23.067362] (-) TimerEvent: {}
+[23.167547] (-) TimerEvent: {}
+[23.221458] (ros1_bridge) StdoutLine: {'line': b'[ 19%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int32__factories.cpp.o\n'}
+[23.268746] (-) TimerEvent: {}
+[23.368934] (-) TimerEvent: {}
+[23.469119] (-) TimerEvent: {}
+[23.569304] (-) TimerEvent: {}
+[23.669481] (-) TimerEvent: {}
+[23.747285] (ros1_bridge) StdoutLine: {'line': b'[ 19%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int32MultiArray__factories.cpp.o\n'}
+[23.769595] (-) TimerEvent: {}
+[23.870081] (-) TimerEvent: {}
+[23.918483] (ros1_bridge) StdoutLine: {'line': b'[ 19%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int64__factories.cpp.o\n'}
+[23.948751] (ros1_bridge) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int64MultiArray__factories.cpp.o\n'}
+[23.970186] (-) TimerEvent: {}
+[23.972078] (ros1_bridge) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int8__factories.cpp.o\n'}
+[24.048557] (ros1_bridge) StdoutLine: {'line': b'[ 20%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__Int8MultiArray__factories.cpp.o\n'}
+[24.070291] (-) TimerEvent: {}
+[24.072746] (ros1_bridge) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__MultiArrayDimension__factories.cpp.o\n'}
+[24.170394] (-) TimerEvent: {}
+[24.270582] (-) TimerEvent: {}
+[24.370773] (-) TimerEvent: {}
+[24.470963] (-) TimerEvent: {}
+[24.571112] (-) TimerEvent: {}
+[24.671298] (-) TimerEvent: {}
+[24.771501] (-) TimerEvent: {}
+[24.871690] (-) TimerEvent: {}
+[24.962726] (ros1_bridge) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__MultiArrayLayout__factories.cpp.o\n'}
+[24.971795] (-) TimerEvent: {}
+[25.071983] (-) TimerEvent: {}
+[25.093008] (ros1_bridge) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__String__factories.cpp.o\n'}
+[25.172089] (-) TimerEvent: {}
+[25.272284] (-) TimerEvent: {}
+[25.372467] (-) TimerEvent: {}
+[25.472653] (-) TimerEvent: {}
+[25.572827] (-) TimerEvent: {}
+[25.673009] (-) TimerEvent: {}
+[25.773204] (-) TimerEvent: {}
+[25.876126] (-) TimerEvent: {}
+[25.976331] (-) TimerEvent: {}
+[26.061042] (ros1_bridge) StdoutLine: {'line': b'[ 22%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt16__factories.cpp.o\n'}
+[26.076436] (-) TimerEvent: {}
+[26.176624] (-) TimerEvent: {}
+[26.276820] (-) TimerEvent: {}
+[26.377015] (-) TimerEvent: {}
+[26.477218] (-) TimerEvent: {}
+[26.577405] (-) TimerEvent: {}
+[26.677602] (-) TimerEvent: {}
+[26.687246] (ros1_bridge) StdoutLine: {'line': b'[ 22%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt16MultiArray__factories.cpp.o\n'}
+[26.777714] (-) TimerEvent: {}
+[26.824460] (ros1_bridge) StdoutLine: {'line': b'[ 22%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt32__factories.cpp.o\n'}
+[26.877839] (-) TimerEvent: {}
+[26.978035] (-) TimerEvent: {}
+[27.078233] (-) TimerEvent: {}
+[27.180130] (-) TimerEvent: {}
+[27.280353] (-) TimerEvent: {}
+[27.380565] (-) TimerEvent: {}
+[27.480770] (-) TimerEvent: {}
+[27.580973] (-) TimerEvent: {}
+[27.601373] (ros1_bridge) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt32MultiArray__factories.cpp.o\n'}
+[27.681101] (-) TimerEvent: {}
+[27.781300] (-) TimerEvent: {}
+[27.881492] (-) TimerEvent: {}
+[27.981688] (-) TimerEvent: {}
+[28.081898] (-) TimerEvent: {}
+[28.183131] (-) TimerEvent: {}
+[28.283339] (-) TimerEvent: {}
+[28.383533] (-) TimerEvent: {}
+[28.483711] (-) TimerEvent: {}
+[28.583902] (-) TimerEvent: {}
+[28.684106] (-) TimerEvent: {}
+[28.785120] (-) TimerEvent: {}
+[28.885335] (-) TimerEvent: {}
+[28.985551] (-) TimerEvent: {}
+[29.085753] (-) TimerEvent: {}
+[29.185942] (-) TimerEvent: {}
+[29.286129] (-) TimerEvent: {}
+[29.388117] (-) TimerEvent: {}
+[29.488298] (-) TimerEvent: {}
+[29.588488] (-) TimerEvent: {}
+[29.688682] (-) TimerEvent: {}
+[29.789790] (-) TimerEvent: {}
+[29.889983] (-) TimerEvent: {}
+[29.993115] (-) TimerEvent: {}
+[30.093303] (-) TimerEvent: {}
+[30.193485] (-) TimerEvent: {}
+[30.293668] (-) TimerEvent: {}
+[30.394098] (-) TimerEvent: {}
+[30.494289] (-) TimerEvent: {}
+[30.594478] (-) TimerEvent: {}
+[30.638263] (ros1_bridge) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt64__factories.cpp.o\n'}
+[30.652383] (ros1_bridge) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt64MultiArray__factories.cpp.o\n'}
+[30.674367] (ros1_bridge) StdoutLine: {'line': b'[ 23%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt8__factories.cpp.o\n'}
+[30.694581] (-) TimerEvent: {}
+[30.794759] (-) TimerEvent: {}
+[30.855488] (ros1_bridge) StdoutLine: {'line': b'[ 24%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__UInt8MultiArray__factories.cpp.o\n'}
+[30.894866] (-) TimerEvent: {}
+[30.995058] (-) TimerEvent: {}
+[31.016244] (ros1_bridge) StdoutLine: {'line': b'[ 24%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__msg__WString__factories.cpp.o\n'}
+[31.075988] (ros1_bridge) StdoutLine: {'line': b'[ 24%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__srv__AddTwoInts__factories.cpp.o\n'}
+[31.095122] (-) TimerEvent: {}
+[31.135973] (ros1_bridge) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__srv__SetBool__factories.cpp.o\n'}
+[31.180269] (ros1_bridge) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/example_interfaces__srv__Trigger__factories.cpp.o\n'}
+[31.195228] (-) TimerEvent: {}
+[31.295412] (-) TimerEvent: {}
+[31.386896] (ros1_bridge) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs_factories.cpp.o\n'}
+[31.395513] (-) TimerEvent: {}
+[31.495690] (-) TimerEvent: {}
+[31.508159] (ros1_bridge) StdoutLine: {'line': b'[ 26%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Accel__factories.cpp.o\n'}
+[31.525547] (ros1_bridge) StdoutLine: {'line': b'[ 26%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__AccelStamped__factories.cpp.o\n'}
+[31.596687] (-) TimerEvent: {}
+[31.696877] (-) TimerEvent: {}
+[31.797079] (-) TimerEvent: {}
+[31.797894] (ros1_bridge) StdoutLine: {'line': b'[ 26%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__AccelWithCovariance__factories.cpp.o\n'}
+[31.812368] (ros1_bridge) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__AccelWithCovarianceStamped__factories.cpp.o\n'}
+[31.887418] (ros1_bridge) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Inertia__factories.cpp.o\n'}
+[31.897181] (-) TimerEvent: {}
+[31.901101] (ros1_bridge) StdoutLine: {'line': b'[ 27%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__InertiaStamped__factories.cpp.o\n'}
+[31.997283] (-) TimerEvent: {}
+[32.068907] (ros1_bridge) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Point__factories.cpp.o\n'}
+[32.097402] (-) TimerEvent: {}
+[32.197612] (-) TimerEvent: {}
+[32.297796] (-) TimerEvent: {}
+[32.357210] (ros1_bridge) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Point32__factories.cpp.o\n'}
+[32.397899] (-) TimerEvent: {}
+[32.498096] (-) TimerEvent: {}
+[32.598288] (-) TimerEvent: {}
+[32.698461] (-) TimerEvent: {}
+[32.800115] (-) TimerEvent: {}
+[32.903132] (-) TimerEvent: {}
+[32.934643] (ros1_bridge) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PointStamped__factories.cpp.o\n'}
+[33.003241] (-) TimerEvent: {}
+[33.099249] (ros1_bridge) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Polygon__factories.cpp.o\n'}
+[33.103331] (-) TimerEvent: {}
+[33.203515] (-) TimerEvent: {}
+[33.269807] (ros1_bridge) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PolygonInstance__factories.cpp.o\n'}
+[33.303626] (-) TimerEvent: {}
+[33.403828] (-) TimerEvent: {}
+[33.435210] (ros1_bridge) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PolygonInstanceStamped__factories.cpp.o\n'}
+[33.503928] (-) TimerEvent: {}
+[33.604114] (-) TimerEvent: {}
+[33.704292] (-) TimerEvent: {}
+[33.804479] (-) TimerEvent: {}
+[33.904658] (-) TimerEvent: {}
+[34.004836] (-) TimerEvent: {}
+[34.105022] (-) TimerEvent: {}
+[34.205200] (-) TimerEvent: {}
+[34.223664] (ros1_bridge) StdoutLine: {'line': b'[ 29%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PolygonStamped__factories.cpp.o\n'}
+[34.309118] (-) TimerEvent: {}
+[34.409305] (-) TimerEvent: {}
+[34.509488] (-) TimerEvent: {}
+[34.609680] (-) TimerEvent: {}
+[34.664426] (ros1_bridge) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Pose__factories.cpp.o\n'}
+[34.676216] (ros1_bridge) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Pose2D__factories.cpp.o\n'}
+[34.709809] (-) TimerEvent: {}
+[34.810025] (-) TimerEvent: {}
+[34.904434] (ros1_bridge) StdoutLine: {'line': b'[ 30%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PoseArray__factories.cpp.o\n'}
+[34.910119] (-) TimerEvent: {}
+[35.010303] (-) TimerEvent: {}
+[35.110497] (-) TimerEvent: {}
+[35.210692] (-) TimerEvent: {}
+[35.253338] (ros1_bridge) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PoseStamped__factories.cpp.o\n'}
+[35.310802] (-) TimerEvent: {}
+[35.410998] (-) TimerEvent: {}
+[35.511194] (-) TimerEvent: {}
+[35.618134] (-) TimerEvent: {}
+[35.718353] (-) TimerEvent: {}
+[35.818549] (-) TimerEvent: {}
+[35.921126] (-) TimerEvent: {}
+[36.021330] (-) TimerEvent: {}
+[36.121518] (-) TimerEvent: {}
+[36.161327] (ros1_bridge) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PoseWithCovariance__factories.cpp.o\n'}
+[36.221618] (-) TimerEvent: {}
+[36.321808] (-) TimerEvent: {}
+[36.422001] (-) TimerEvent: {}
+[36.522233] (-) TimerEvent: {}
+[36.622432] (-) TimerEvent: {}
+[36.722643] (-) TimerEvent: {}
+[36.822860] (-) TimerEvent: {}
+[36.923058] (-) TimerEvent: {}
+[37.023257] (-) TimerEvent: {}
+[37.123460] (-) TimerEvent: {}
+[37.223654] (-) TimerEvent: {}
+[37.325123] (-) TimerEvent: {}
+[37.425323] (-) TimerEvent: {}
+[37.525522] (-) TimerEvent: {}
+[37.625725] (-) TimerEvent: {}
+[37.725920] (-) TimerEvent: {}
+[37.826121] (-) TimerEvent: {}
+[37.926328] (-) TimerEvent: {}
+[38.026533] (-) TimerEvent: {}
+[38.128118] (-) TimerEvent: {}
+[38.143430] (ros1_bridge) StdoutLine: {'line': b'[ 31%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__PoseWithCovarianceStamped__factories.cpp.o\n'}
+[38.228246] (-) TimerEvent: {}
+[38.328442] (-) TimerEvent: {}
+[38.428643] (-) TimerEvent: {}
+[38.528843] (-) TimerEvent: {}
+[38.629037] (-) TimerEvent: {}
+[38.729236] (-) TimerEvent: {}
+[38.818644] (ros1_bridge) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Quaternion__factories.cpp.o\n'}
+[38.829347] (-) TimerEvent: {}
+[38.915132] (ros1_bridge) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__QuaternionStamped__factories.cpp.o\n'}
+[38.929451] (-) TimerEvent: {}
+[39.031117] (-) TimerEvent: {}
+[39.131307] (-) TimerEvent: {}
+[39.231516] (-) TimerEvent: {}
+[39.309993] (ros1_bridge) StdoutLine: {'line': b'[ 32%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Transform__factories.cpp.o\n'}
+[39.331623] (-) TimerEvent: {}
+[39.431816] (-) TimerEvent: {}
+[39.532006] (-) TimerEvent: {}
+[39.583018] (ros1_bridge) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__TransformStamped__factories.cpp.o\n'}
+[39.632122] (-) TimerEvent: {}
+[39.677109] (ros1_bridge) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Twist__factories.cpp.o\n'}
+[39.732225] (-) TimerEvent: {}
+[39.832420] (-) TimerEvent: {}
+[39.928120] (ros1_bridge) StdoutLine: {'line': b'[ 33%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__TwistStamped__factories.cpp.o\n'}
+[39.932525] (-) TimerEvent: {}
+[40.032710] (-) TimerEvent: {}
+[40.132902] (-) TimerEvent: {}
+[40.233964] (-) TimerEvent: {}
+[40.334113] (-) TimerEvent: {}
+[40.434316] (-) TimerEvent: {}
+[40.534527] (-) TimerEvent: {}
+[40.634737] (-) TimerEvent: {}
+[40.734944] (-) TimerEvent: {}
+[40.835116] (-) TimerEvent: {}
+[40.839799] (ros1_bridge) StdoutLine: {'line': b'[ 34%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__TwistWithCovariance__factories.cpp.o\n'}
+[40.941418] (-) TimerEvent: {}
+[41.042723] (-) TimerEvent: {}
+[41.142912] (-) TimerEvent: {}
+[41.243125] (-) TimerEvent: {}
+[41.343314] (-) TimerEvent: {}
+[41.443503] (-) TimerEvent: {}
+[41.543692] (-) TimerEvent: {}
+[41.596836] (ros1_bridge) StdoutLine: {'line': b'[ 34%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__TwistWithCovarianceStamped__factories.cpp.o\n'}
+[41.643804] (-) TimerEvent: {}
+[41.744001] (-) TimerEvent: {}
+[41.844200] (-) TimerEvent: {}
+[41.944507] (-) TimerEvent: {}
+[42.048118] (-) TimerEvent: {}
+[42.148315] (-) TimerEvent: {}
+[42.248514] (-) TimerEvent: {}
+[42.348705] (-) TimerEvent: {}
+[42.448906] (-) TimerEvent: {}
+[42.549108] (-) TimerEvent: {}
+[42.649304] (-) TimerEvent: {}
+[42.749504] (-) TimerEvent: {}
+[42.849691] (-) TimerEvent: {}
+[42.923084] (ros1_bridge) StdoutLine: {'line': b'[ 34%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Vector3__factories.cpp.o\n'}
+[42.949826] (-) TimerEvent: {}
+[43.050066] (-) TimerEvent: {}
+[43.150267] (-) TimerEvent: {}
+[43.250455] (-) TimerEvent: {}
+[43.279189] (ros1_bridge) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Vector3Stamped__factories.cpp.o\n'}
+[43.350559] (-) TimerEvent: {}
+[43.450765] (-) TimerEvent: {}
+[43.550989] (-) TimerEvent: {}
+[43.552827] (ros1_bridge) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__VelocityStamped__factories.cpp.o\n'}
+[43.652120] (-) TimerEvent: {}
+[43.752317] (-) TimerEvent: {}
+[43.852509] (-) TimerEvent: {}
+[43.952703] (-) TimerEvent: {}
+[44.052903] (-) TimerEvent: {}
+[44.153105] (-) TimerEvent: {}
+[44.253297] (-) TimerEvent: {}
+[44.355119] (-) TimerEvent: {}
+[44.455314] (-) TimerEvent: {}
+[44.555507] (-) TimerEvent: {}
+[44.655697] (-) TimerEvent: {}
+[44.757119] (-) TimerEvent: {}
+[44.871814] (-) TimerEvent: {}
+[44.990254] (-) TimerEvent: {}
+[45.095132] (-) TimerEvent: {}
+[45.195361] (-) TimerEvent: {}
+[45.300129] (-) TimerEvent: {}
+[45.402126] (-) TimerEvent: {}
+[45.503283] (-) TimerEvent: {}
+[45.606118] (-) TimerEvent: {}
+[45.706480] (-) TimerEvent: {}
+[45.806665] (-) TimerEvent: {}
+[45.906847] (-) TimerEvent: {}
+[46.007035] (-) TimerEvent: {}
+[46.107241] (-) TimerEvent: {}
+[46.207446] (-) TimerEvent: {}
+[46.307652] (-) TimerEvent: {}
+[46.407835] (-) TimerEvent: {}
+[46.508023] (-) TimerEvent: {}
+[46.608213] (-) TimerEvent: {}
+[46.708412] (-) TimerEvent: {}
+[46.808612] (-) TimerEvent: {}
+[46.908831] (-) TimerEvent: {}
+[47.009022] (-) TimerEvent: {}
+[47.109236] (-) TimerEvent: {}
+[47.236089] (-) TimerEvent: {}
+[47.338113] (-) TimerEvent: {}
+[47.438295] (-) TimerEvent: {}
+[47.538474] (-) TimerEvent: {}
+[47.638654] (-) TimerEvent: {}
+[47.738838] (-) TimerEvent: {}
+[47.839021] (-) TimerEvent: {}
+[47.939214] (-) TimerEvent: {}
+[48.039412] (-) TimerEvent: {}
+[48.139592] (-) TimerEvent: {}
+[48.239779] (-) TimerEvent: {}
+[48.339969] (-) TimerEvent: {}
+[48.440133] (-) TimerEvent: {}
+[48.540329] (-) TimerEvent: {}
+[48.640512] (-) TimerEvent: {}
+[48.742119] (-) TimerEvent: {}
+[48.842308] (-) TimerEvent: {}
+[48.942494] (-) TimerEvent: {}
+[49.042678] (-) TimerEvent: {}
+[49.142873] (-) TimerEvent: {}
+[49.243081] (-) TimerEvent: {}
+[49.343287] (-) TimerEvent: {}
+[49.443484] (-) TimerEvent: {}
+[49.543667] (-) TimerEvent: {}
+[49.643856] (-) TimerEvent: {}
+[49.745125] (-) TimerEvent: {}
+[49.845310] (-) TimerEvent: {}
+[49.945514] (-) TimerEvent: {}
+[50.045753] (-) TimerEvent: {}
+[50.145991] (-) TimerEvent: {}
+[50.246266] (-) TimerEvent: {}
+[50.346509] (-) TimerEvent: {}
+[50.446772] (-) TimerEvent: {}
+[50.547000] (-) TimerEvent: {}
+[50.647170] (-) TimerEvent: {}
+[50.747334] (-) TimerEvent: {}
+[50.847592] (-) TimerEvent: {}
+[50.947789] (-) TimerEvent: {}
+[51.048039] (-) TimerEvent: {}
+[51.148224] (-) TimerEvent: {}
+[51.248453] (-) TimerEvent: {}
+[51.348701] (-) TimerEvent: {}
+[51.448869] (-) TimerEvent: {}
+[51.549058] (-) TimerEvent: {}
+[51.649260] (-) TimerEvent: {}
+[51.749444] (-) TimerEvent: {}
+[51.849638] (-) TimerEvent: {}
+[51.949864] (-) TimerEvent: {}
+[52.050072] (-) TimerEvent: {}
+[52.150330] (-) TimerEvent: {}
+[52.250594] (-) TimerEvent: {}
+[52.352126] (-) TimerEvent: {}
+[52.452317] (-) TimerEvent: {}
+[52.552527] (-) TimerEvent: {}
+[52.658128] (-) TimerEvent: {}
+[52.758330] (-) TimerEvent: {}
+[52.813533] (ros1_bridge) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__Wrench__factories.cpp.o\n'}
+[52.832911] (ros1_bridge) StdoutLine: {'line': b'[ 36%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/geometry_msgs__msg__WrenchStamped__factories.cpp.o\n'}
+[52.858453] (-) TimerEvent: {}
+[52.928213] (ros1_bridge) StdoutLine: {'line': b'[ 36%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs_factories.cpp.o\n'}
+[52.938303] (ros1_bridge) StdoutLine: {'line': b'[ 36%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__msg__State__factories.cpp.o\n'}
+[52.958568] (-) TimerEvent: {}
+[53.058769] (-) TimerEvent: {}
+[53.158972] (-) TimerEvent: {}
+[53.224241] (ros1_bridge) StdoutLine: {'line': b'[ 36%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__msg__Transition__factories.cpp.o\n'}
+[53.259086] (-) TimerEvent: {}
+[53.275553] (ros1_bridge) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__msg__TransitionDescription__factories.cpp.o\n'}
+[53.359191] (-) TimerEvent: {}
+[53.459375] (-) TimerEvent: {}
+[53.559857] (-) TimerEvent: {}
+[53.660602] (-) TimerEvent: {}
+[53.763117] (-) TimerEvent: {}
+[53.863317] (-) TimerEvent: {}
+[53.966608] (ros1_bridge) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__msg__TransitionEvent__factories.cpp.o\n'}
+[53.966897] (-) TimerEvent: {}
+[54.067044] (-) TimerEvent: {}
+[54.169116] (-) TimerEvent: {}
+[54.267267] (ros1_bridge) StdoutLine: {'line': b'[ 37%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__srv__ChangeState__factories.cpp.o\n'}
+[54.269199] (-) TimerEvent: {}
+[54.369366] (-) TimerEvent: {}
+[54.417288] (ros1_bridge) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__srv__GetAvailableStates__factories.cpp.o\n'}
+[54.455122] (ros1_bridge) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__srv__GetAvailableTransitions__factories.cpp.o\n'}
+[54.469492] (-) TimerEvent: {}
+[54.569679] (-) TimerEvent: {}
+[54.669848] (-) TimerEvent: {}
+[54.720212] (ros1_bridge) StdoutLine: {'line': b'[ 38%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/lifecycle_msgs__srv__GetState__factories.cpp.o\n'}
+[54.769946] (-) TimerEvent: {}
+[54.870111] (-) TimerEvent: {}
+[54.970282] (-) TimerEvent: {}
+[55.074112] (-) TimerEvent: {}
+[55.143966] (ros1_bridge) StdoutLine: {'line': b'[ 39%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/logging_demo_factories.cpp.o\n'}
+[55.174260] (-) TimerEvent: {}
+[55.183913] (ros1_bridge) StdoutLine: {'line': b'[ 39%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/logging_demo__srv__ConfigLogger__factories.cpp.o\n'}
+[55.274362] (-) TimerEvent: {}
+[55.328435] (ros1_bridge) StdoutLine: {'line': b'[ 39%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs_factories.cpp.o\n'}
+[55.374467] (-) TimerEvent: {}
+[55.474656] (-) TimerEvent: {}
+[55.574840] (-) TimerEvent: {}
+[55.675013] (-) TimerEvent: {}
+[55.775193] (-) TimerEvent: {}
+[55.793938] (ros1_bridge) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__msg__OccupancyGridUpdate__factories.cpp.o\n'}
+[55.875297] (-) TimerEvent: {}
+[55.975476] (-) TimerEvent: {}
+[56.075654] (-) TimerEvent: {}
+[56.175839] (-) TimerEvent: {}
+[56.221338] (ros1_bridge) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__msg__PointCloud2Update__factories.cpp.o\n'}
+[56.275939] (-) TimerEvent: {}
+[56.376113] (-) TimerEvent: {}
+[56.476296] (-) TimerEvent: {}
+[56.576476] (-) TimerEvent: {}
+[56.582907] (ros1_bridge) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__msg__ProjectedMapInfo__factories.cpp.o\n'}
+[56.680138] (-) TimerEvent: {}
+[56.780314] (-) TimerEvent: {}
+[56.880496] (-) TimerEvent: {}
+[56.980694] (-) TimerEvent: {}
+[57.080876] (-) TimerEvent: {}
+[57.181059] (-) TimerEvent: {}
+[57.281237] (-) TimerEvent: {}
+[57.381427] (-) TimerEvent: {}
+[57.481610] (-) TimerEvent: {}
+[57.585729] (-) TimerEvent: {}
+[57.689114] (-) TimerEvent: {}
+[57.789302] (-) TimerEvent: {}
+[57.889485] (-) TimerEvent: {}
+[57.989663] (-) TimerEvent: {}
+[58.089881] (-) TimerEvent: {}
+[58.190078] (-) TimerEvent: {}
+[58.290264] (-) TimerEvent: {}
+[58.319931] (ros1_bridge) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__msg__ProjectedMap__factories.cpp.o\n'}
+[58.390391] (-) TimerEvent: {}
+[58.427000] (ros1_bridge) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__GetMapROI__factories.cpp.o\n'}
+[58.496120] (-) TimerEvent: {}
+[58.596461] (-) TimerEvent: {}
+[58.696649] (-) TimerEvent: {}
+[58.796835] (-) TimerEvent: {}
+[58.901578] (-) TimerEvent: {}
+[59.001785] (-) TimerEvent: {}
+[59.102601] (-) TimerEvent: {}
+[59.202794] (-) TimerEvent: {}
+[59.302983] (-) TimerEvent: {}
+[59.403791] (-) TimerEvent: {}
+[59.506114] (-) TimerEvent: {}
+[59.520569] (ros1_bridge) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__GetPointMapROI__factories.cpp.o\n'}
+[59.606219] (-) TimerEvent: {}
+[59.665075] (ros1_bridge) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__GetPointMap__factories.cpp.o\n'}
+[59.706325] (-) TimerEvent: {}
+[59.806510] (-) TimerEvent: {}
+[59.906697] (-) TimerEvent: {}
+[60.006864] (-) TimerEvent: {}
+[60.107056] (-) TimerEvent: {}
+[60.207241] (-) TimerEvent: {}
+[60.225616] (ros1_bridge) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__ProjectedMapsInfo__factories.cpp.o\n'}
+[60.307362] (-) TimerEvent: {}
+[60.438388] (-) TimerEvent: {}
+[60.524122] (ros1_bridge) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__SaveMap__factories.cpp.o\n'}
+[60.538494] (-) TimerEvent: {}
+[60.638685] (-) TimerEvent: {}
+[60.738880] (-) TimerEvent: {}
+[60.839092] (-) TimerEvent: {}
+[60.894114] (ros1_bridge) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/map_msgs__srv__SetMapProjections__factories.cpp.o\n'}
+[60.906579] (ros1_bridge) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs_factories.cpp.o\n'}
+[60.939188] (-) TimerEvent: {}
+[61.039371] (-) TimerEvent: {}
+[61.139559] (-) TimerEvent: {}
+[61.239747] (-) TimerEvent: {}
+[61.340119] (-) TimerEvent: {}
+[61.441397] (-) TimerEvent: {}
+[61.541595] (-) TimerEvent: {}
+[61.605551] (ros1_bridge) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__Goals__factories.cpp.o\n'}
+[61.641700] (-) TimerEvent: {}
+[61.711580] (ros1_bridge) StdoutLine: {'line': b'[ 43%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__GridCells__factories.cpp.o\n'}
+[61.733720] (ros1_bridge) StdoutLine: {'line': b'[ 44%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__MapMetaData__factories.cpp.o\n'}
+[61.741807] (-) TimerEvent: {}
+[61.806834] (ros1_bridge) StdoutLine: {'line': b'[ 44%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__OccupancyGrid__factories.cpp.o\n'}
+[61.841909] (-) TimerEvent: {}
+[61.942102] (-) TimerEvent: {}
+[62.045116] (-) TimerEvent: {}
+[62.145298] (-) TimerEvent: {}
+[62.154691] (ros1_bridge) StdoutLine: {'line': b'[ 44%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__Odometry__factories.cpp.o\n'}
+[62.193548] (ros1_bridge) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__msg__Path__factories.cpp.o\n'}
+[62.245406] (-) TimerEvent: {}
+[62.289242] (ros1_bridge) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__srv__GetMap__factories.cpp.o\n'}
+[62.337645] (ros1_bridge) StdoutLine: {'line': b'[ 45%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__srv__GetPlan__factories.cpp.o\n'}
+[62.345506] (-) TimerEvent: {}
+[62.445677] (-) TimerEvent: {}
+[62.546115] (-) TimerEvent: {}
+[62.650113] (-) TimerEvent: {}
+[62.750317] (-) TimerEvent: {}
+[62.774223] (ros1_bridge) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__srv__LoadMap__factories.cpp.o\n'}
+[62.830470] (ros1_bridge) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/nav_msgs__srv__SetMap__factories.cpp.o\n'}
+[62.835213] (ros1_bridge) StdoutLine: {'line': b'[ 46%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs_factories.cpp.o\n'}
+[62.850413] (-) TimerEvent: {}
+[62.950590] (-) TimerEvent: {}
+[63.025410] (ros1_bridge) StdoutLine: {'line': b'[ 47%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs__msg__ModelCoefficients__factories.cpp.o\n'}
+[63.050703] (-) TimerEvent: {}
+[63.150890] (-) TimerEvent: {}
+[63.251100] (-) TimerEvent: {}
+[63.351289] (-) TimerEvent: {}
+[63.451469] (-) TimerEvent: {}
+[63.541448] (ros1_bridge) StdoutLine: {'line': b'[ 47%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs__msg__PointIndices__factories.cpp.o\n'}
+[63.551569] (-) TimerEvent: {}
+[63.652361] (-) TimerEvent: {}
+[63.753112] (-) TimerEvent: {}
+[63.853297] (-) TimerEvent: {}
+[63.905372] (ros1_bridge) StdoutLine: {'line': b'[ 47%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs__msg__PolygonMesh__factories.cpp.o\n'}
+[63.953360] (-) TimerEvent: {}
+[64.054126] (-) TimerEvent: {}
+[64.154335] (-) TimerEvent: {}
+[64.254521] (-) TimerEvent: {}
+[64.327444] (ros1_bridge) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs__msg__Vertices__factories.cpp.o\n'}
+[64.355273] (-) TimerEvent: {}
+[64.455473] (-) TimerEvent: {}
+[64.555674] (-) TimerEvent: {}
+[64.655865] (-) TimerEvent: {}
+[64.756389] (-) TimerEvent: {}
+[64.856576] (-) TimerEvent: {}
+[64.957165] (-) TimerEvent: {}
+[65.057381] (-) TimerEvent: {}
+[65.160115] (-) TimerEvent: {}
+[65.260313] (-) TimerEvent: {}
+[65.360519] (-) TimerEvent: {}
+[65.460717] (-) TimerEvent: {}
+[65.560910] (-) TimerEvent: {}
+[65.661117] (-) TimerEvent: {}
+[65.761316] (-) TimerEvent: {}
+[65.861537] (-) TimerEvent: {}
+[65.961743] (-) TimerEvent: {}
+[66.061967] (-) TimerEvent: {}
+[66.162170] (-) TimerEvent: {}
+[66.262366] (-) TimerEvent: {}
+[66.362582] (-) TimerEvent: {}
+[66.462809] (-) TimerEvent: {}
+[66.563068] (-) TimerEvent: {}
+[66.663283] (-) TimerEvent: {}
+[66.767047] (-) TimerEvent: {}
+[66.867308] (-) TimerEvent: {}
+[66.967526] (-) TimerEvent: {}
+[67.067933] (-) TimerEvent: {}
+[67.168133] (-) TimerEvent: {}
+[67.268320] (-) TimerEvent: {}
+[67.368503] (-) TimerEvent: {}
+[67.468684] (-) TimerEvent: {}
+[67.568878] (-) TimerEvent: {}
+[67.669094] (-) TimerEvent: {}
+[67.769289] (-) TimerEvent: {}
+[67.869486] (-) TimerEvent: {}
+[67.972139] (-) TimerEvent: {}
+[67.977679] (ros1_bridge) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pcl_msgs__srv__UpdateFilename__factories.cpp.o\n'}
+[68.072244] (-) TimerEvent: {}
+[68.172433] (-) TimerEvent: {}
+[68.272616] (-) TimerEvent: {}
+[68.372807] (-) TimerEvent: {}
+[68.473018] (-) TimerEvent: {}
+[68.573231] (-) TimerEvent: {}
+[68.673430] (-) TimerEvent: {}
+[68.773621] (-) TimerEvent: {}
+[68.873804] (-) TimerEvent: {}
+[68.946120] (ros1_bridge) StdoutLine: {'line': b'[ 48%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pendulum_msgs_factories.cpp.o\n'}
+[68.973910] (-) TimerEvent: {}
+[69.074107] (-) TimerEvent: {}
+[69.159932] (ros1_bridge) StdoutLine: {'line': b'[ 49%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pendulum_msgs__msg__JointState__factories.cpp.o\n'}
+[69.174207] (-) TimerEvent: {}
+[69.274389] (-) TimerEvent: {}
+[69.374573] (-) TimerEvent: {}
+[69.477116] (-) TimerEvent: {}
+[69.577298] (-) TimerEvent: {}
+[69.677491] (-) TimerEvent: {}
+[69.777701] (-) TimerEvent: {}
+[69.833414] (ros1_bridge) StdoutLine: {'line': b'[ 49%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pendulum_msgs__msg__JointCommand__factories.cpp.o\n'}
+[69.877813] (-) TimerEvent: {}
+[69.977991] (-) TimerEvent: {}
+[70.001268] (ros1_bridge) StdoutLine: {'line': b'[ 49%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/pendulum_msgs__msg__RttestResults__factories.cpp.o\n'}
+[70.078108] (-) TimerEvent: {}
+[70.178307] (-) TimerEvent: {}
+[70.192612] (ros1_bridge) StdoutLine: {'line': b'[ 49%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces_factories.cpp.o\n'}
+[70.278400] (-) TimerEvent: {}
+[70.380119] (-) TimerEvent: {}
+[70.480305] (-) TimerEvent: {}
+[70.495598] (ros1_bridge) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__FloatingPointRange__factories.cpp.o\n'}
+[70.580406] (-) TimerEvent: {}
+[70.680583] (-) TimerEvent: {}
+[70.707128] (ros1_bridge) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__IntegerRange__factories.cpp.o\n'}
+[70.780687] (-) TimerEvent: {}
+[70.880875] (-) TimerEvent: {}
+[70.981071] (-) TimerEvent: {}
+[71.036571] (ros1_bridge) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__Log__factories.cpp.o\n'}
+[71.052072] (ros1_bridge) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ListParametersResult__factories.cpp.o\n'}
+[71.081168] (-) TimerEvent: {}
+[71.181351] (-) TimerEvent: {}
+[71.281545] (-) TimerEvent: {}
+[71.381734] (-) TimerEvent: {}
+[71.432865] (ros1_bridge) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ParameterDescriptor__factories.cpp.o\n'}
+[71.481840] (-) TimerEvent: {}
+[71.582028] (-) TimerEvent: {}
+[71.682224] (-) TimerEvent: {}
+[71.736703] (ros1_bridge) StdoutLine: {'line': b'[ 51%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ParameterEventDescriptors__factories.cpp.o\n'}
+[71.782338] (-) TimerEvent: {}
+[71.811781] (ros1_bridge) StdoutLine: {'line': b'[ 52%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ParameterEvent__factories.cpp.o\n'}
+[71.882449] (-) TimerEvent: {}
+[71.986113] (-) TimerEvent: {}
+[72.086293] (-) TimerEvent: {}
+[72.186476] (-) TimerEvent: {}
+[72.286657] (-) TimerEvent: {}
+[72.386839] (-) TimerEvent: {}
+[72.487078] (-) TimerEvent: {}
+[72.587313] (-) TimerEvent: {}
+[72.690139] (-) TimerEvent: {}
+[72.769960] (ros1_bridge) StdoutLine: {'line': b'[ 52%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__Parameter__factories.cpp.o\n'}
+[72.790253] (-) TimerEvent: {}
+[72.796929] (ros1_bridge) StdoutLine: {'line': b'[ 52%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ParameterType__factories.cpp.o\n'}
+[72.804988] (ros1_bridge) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__ParameterValue__factories.cpp.o\n'}
+[72.886101] (ros1_bridge) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__msg__SetParametersResult__factories.cpp.o\n'}
+[72.890343] (-) TimerEvent: {}
+[72.990534] (-) TimerEvent: {}
+[73.090717] (-) TimerEvent: {}
+[73.131158] (ros1_bridge) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__DescribeParameters__factories.cpp.o\n'}
+[73.190832] (-) TimerEvent: {}
+[73.291010] (-) TimerEvent: {}
+[73.301278] (ros1_bridge) StdoutLine: {'line': b'[ 54%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__GetParameters__factories.cpp.o\n'}
+[73.391116] (-) TimerEvent: {}
+[73.491312] (-) TimerEvent: {}
+[73.582131] (ros1_bridge) StdoutLine: {'line': b'[ 54%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__GetParameterTypes__factories.cpp.o\n'}
+[73.591419] (-) TimerEvent: {}
+[73.635307] (ros1_bridge) StdoutLine: {'line': b'[ 54%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__ListParameters__factories.cpp.o\n'}
+[73.691524] (-) TimerEvent: {}
+[73.791709] (-) TimerEvent: {}
+[73.891893] (-) TimerEvent: {}
+[73.992091] (-) TimerEvent: {}
+[74.092326] (-) TimerEvent: {}
+[74.192534] (-) TimerEvent: {}
+[74.248900] (ros1_bridge) StdoutLine: {'line': b'[ 55%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__SetParametersAtomically__factories.cpp.o\n'}
+[74.292640] (-) TimerEvent: {}
+[74.393007] (-) TimerEvent: {}
+[74.493217] (-) TimerEvent: {}
+[74.595021] (-) TimerEvent: {}
+[74.695649] (-) TimerEvent: {}
+[74.795857] (-) TimerEvent: {}
+[74.896037] (-) TimerEvent: {}
+[74.996232] (-) TimerEvent: {}
+[75.096408] (-) TimerEvent: {}
+[75.196591] (-) TimerEvent: {}
+[75.296776] (-) TimerEvent: {}
+[75.396958] (-) TimerEvent: {}
+[75.497124] (-) TimerEvent: {}
+[75.597316] (-) TimerEvent: {}
+[75.602343] (ros1_bridge) StdoutLine: {'line': b'[ 55%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rcl_interfaces__srv__SetParameters__factories.cpp.o\n'}
+[75.697422] (-) TimerEvent: {}
+[75.783094] (ros1_bridge) StdoutLine: {'line': b'[ 55%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rmw_dds_common_factories.cpp.o\n'}
+[75.797533] (-) TimerEvent: {}
+[75.897711] (-) TimerEvent: {}
+[76.025078] (-) TimerEvent: {}
+[76.062349] (ros1_bridge) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rmw_dds_common__msg__Gid__factories.cpp.o\n'}
+[76.125182] (-) TimerEvent: {}
+[76.225366] (-) TimerEvent: {}
+[76.325552] (-) TimerEvent: {}
+[76.425743] (-) TimerEvent: {}
+[76.525926] (-) TimerEvent: {}
+[76.626110] (-) TimerEvent: {}
+[76.726291] (-) TimerEvent: {}
+[76.826460] (-) TimerEvent: {}
+[76.926634] (-) TimerEvent: {}
+[77.026810] (-) TimerEvent: {}
+[77.126991] (-) TimerEvent: {}
+[77.154775] (ros1_bridge) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rmw_dds_common__msg__NodeEntitiesInfo__factories.cpp.o\n'}
+[77.201773] (ros1_bridge) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rmw_dds_common__msg__ParticipantEntitiesInfo__factories.cpp.o\n'}
+[77.227099] (-) TimerEvent: {}
+[77.259073] (ros1_bridge) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces_factories.cpp.o\n'}
+[77.327211] (-) TimerEvent: {}
+[77.427404] (-) TimerEvent: {}
+[77.530113] (-) TimerEvent: {}
+[77.537081] (ros1_bridge) StdoutLine: {'line': b'[ 57%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__msg__ReadSplitEvent__factories.cpp.o\n'}
+[77.630218] (-) TimerEvent: {}
+[77.730411] (-) TimerEvent: {}
+[77.830601] (-) TimerEvent: {}
+[77.901139] (ros1_bridge) StdoutLine: {'line': b'[ 57%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__msg__WriteSplitEvent__factories.cpp.o\n'}
+[77.930703] (-) TimerEvent: {}
+[78.030884] (-) TimerEvent: {}
+[78.131088] (-) TimerEvent: {}
+[78.231273] (-) TimerEvent: {}
+[78.331448] (-) TimerEvent: {}
+[78.431630] (-) TimerEvent: {}
+[78.463334] (ros1_bridge) StdoutLine: {'line': b'[ 57%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__Burst__factories.cpp.o\n'}
+[78.471300] (ros1_bridge) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__GetRate__factories.cpp.o\n'}
+[78.531740] (-) TimerEvent: {}
+[78.631930] (-) TimerEvent: {}
+[78.736111] (-) TimerEvent: {}
+[78.836296] (-) TimerEvent: {}
+[78.936473] (-) TimerEvent: {}
+[78.953424] (ros1_bridge) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__IsPaused__factories.cpp.o\n'}
+[79.036594] (-) TimerEvent: {}
+[79.071524] (ros1_bridge) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__Pause__factories.cpp.o\n'}
+[79.136718] (-) TimerEvent: {}
+[79.187579] (ros1_bridge) StdoutLine: {'line': b'[ 59%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__PlayNext__factories.cpp.o\n'}
+[79.236826] (-) TimerEvent: {}
+[79.317891] (ros1_bridge) StdoutLine: {'line': b'[ 59%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__Resume__factories.cpp.o\n'}
+[79.336936] (-) TimerEvent: {}
+[79.437127] (-) TimerEvent: {}
+[79.537324] (-) TimerEvent: {}
+[79.637525] (-) TimerEvent: {}
+[79.737724] (-) TimerEvent: {}
+[79.837919] (-) TimerEvent: {}
+[79.872790] (ros1_bridge) StdoutLine: {'line': b'[ 59%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__Seek__factories.cpp.o\n'}
+[79.938028] (-) TimerEvent: {}
+[79.952397] (ros1_bridge) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__SetRate__factories.cpp.o\n'}
+[80.038134] (-) TimerEvent: {}
+[80.141123] (-) TimerEvent: {}
+[80.241327] (-) TimerEvent: {}
+[80.341536] (-) TimerEvent: {}
+[80.422212] (ros1_bridge) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__Snapshot__factories.cpp.o\n'}
+[80.443040] (-) TimerEvent: {}
+[80.465274] (ros1_bridge) StdoutLine: {'line': b'[ 60%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosbag2_interfaces__srv__TogglePaused__factories.cpp.o\n'}
+[80.488028] (ros1_bridge) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosgraph_msgs_factories.cpp.o\n'}
+[80.543122] (-) TimerEvent: {}
+[80.643882] (-) TimerEvent: {}
+[80.748113] (-) TimerEvent: {}
+[80.849109] (-) TimerEvent: {}
+[80.855339] (ros1_bridge) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/rosgraph_msgs__msg__Clock__factories.cpp.o\n'}
+[80.892312] (ros1_bridge) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs_factories.cpp.o\n'}
+[80.927788] (ros1_bridge) StdoutLine: {'line': b'[ 62%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__BatteryState__factories.cpp.o\n'}
+[80.949211] (-) TimerEvent: {}
+[81.049402] (-) TimerEvent: {}
+[81.135696] (ros1_bridge) StdoutLine: {'line': b'[ 62%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__CameraInfo__factories.cpp.o\n'}
+[81.151111] (ros1_bridge) StdoutLine: {'line': b'[ 62%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__ChannelFloat32__factories.cpp.o\n'}
+[81.151316] (-) TimerEvent: {}
+[81.251450] (-) TimerEvent: {}
+[81.351632] (-) TimerEvent: {}
+[81.355861] (ros1_bridge) StdoutLine: {'line': b'[ 63%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__CompressedImage__factories.cpp.o\n'}
+[81.451734] (-) TimerEvent: {}
+[81.510201] (ros1_bridge) StdoutLine: {'line': b'[ 63%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__FluidPressure__factories.cpp.o\n'}
+[81.551836] (-) TimerEvent: {}
+[81.652019] (-) TimerEvent: {}
+[81.752204] (-) TimerEvent: {}
+[81.852395] (-) TimerEvent: {}
+[81.855013] (ros1_bridge) StdoutLine: {'line': b'[ 63%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Illuminance__factories.cpp.o\n'}
+[81.952548] (-) TimerEvent: {}
+[82.052736] (-) TimerEvent: {}
+[82.152919] (-) TimerEvent: {}
+[82.254471] (-) TimerEvent: {}
+[82.295102] (ros1_bridge) StdoutLine: {'line': b'[ 63%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Image__factories.cpp.o\n'}
+[82.354576] (-) TimerEvent: {}
+[82.454761] (-) TimerEvent: {}
+[82.554948] (-) TimerEvent: {}
+[82.655107] (-) TimerEvent: {}
+[82.755734] (-) TimerEvent: {}
+[82.855917] (-) TimerEvent: {}
+[82.956107] (-) TimerEvent: {}
+[83.062124] (-) TimerEvent: {}
+[83.162319] (-) TimerEvent: {}
+[83.262501] (-) TimerEvent: {}
+[83.287390] (ros1_bridge) StdoutLine: {'line': b'[ 64%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Imu__factories.cpp.o\n'}
+[83.345613] (ros1_bridge) StdoutLine: {'line': b'[ 64%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__JointState__factories.cpp.o\n'}
+[83.362605] (-) TimerEvent: {}
+[83.462798] (-) TimerEvent: {}
+[83.520454] (ros1_bridge) StdoutLine: {'line': b'[ 64%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Joy__factories.cpp.o\n'}
+[83.562905] (-) TimerEvent: {}
+[83.663112] (-) TimerEvent: {}
+[83.764129] (-) TimerEvent: {}
+[83.866136] (-) TimerEvent: {}
+[83.966337] (-) TimerEvent: {}
+[84.066544] (-) TimerEvent: {}
+[84.119715] (ros1_bridge) StdoutLine: {'line': b'[ 65%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__JoyFeedback__factories.cpp.o\n'}
+[84.166656] (-) TimerEvent: {}
+[84.266885] (-) TimerEvent: {}
+[84.367094] (-) TimerEvent: {}
+[84.467283] (-) TimerEvent: {}
+[84.567470] (-) TimerEvent: {}
+[84.667669] (-) TimerEvent: {}
+[84.767878] (-) TimerEvent: {}
+[84.803275] (ros1_bridge) StdoutLine: {'line': b'[ 65%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__JoyFeedbackArray__factories.cpp.o\n'}
+[84.867984] (-) TimerEvent: {}
+[84.912087] (ros1_bridge) StdoutLine: {'line': b'[ 65%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__LaserEcho__factories.cpp.o\n'}
+[84.968101] (-) TimerEvent: {}
+[85.068294] (-) TimerEvent: {}
+[85.168506] (-) TimerEvent: {}
+[85.268696] (-) TimerEvent: {}
+[85.345357] (ros1_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__LaserScan__factories.cpp.o\n'}
+[85.368803] (-) TimerEvent: {}
+[85.468993] (-) TimerEvent: {}
+[85.572117] (-) TimerEvent: {}
+[85.602090] (ros1_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__MagneticField__factories.cpp.o\n'}
+[85.672222] (-) TimerEvent: {}
+[85.772408] (-) TimerEvent: {}
+[85.872604] (-) TimerEvent: {}
+[85.972816] (-) TimerEvent: {}
+[86.073013] (-) TimerEvent: {}
+[86.173213] (-) TimerEvent: {}
+[86.273421] (-) TimerEvent: {}
+[86.373623] (-) TimerEvent: {}
+[86.473812] (-) TimerEvent: {}
+[86.568118] (ros1_bridge) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__MultiDOFJointState__factories.cpp.o\n'}
+[86.572654] (ros1_bridge) StdoutLine: {'line': b'[ 67%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__MultiEchoLaserScan__factories.cpp.o\n'}
+[86.573908] (-) TimerEvent: {}
+[86.602443] (ros1_bridge) StdoutLine: {'line': b'[ 67%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__NavSatFix__factories.cpp.o\n'}
+[86.674018] (-) TimerEvent: {}
+[86.774211] (-) TimerEvent: {}
+[86.875130] (-) TimerEvent: {}
+[86.996564] (-) TimerEvent: {}
+[87.040068] (ros1_bridge) StdoutLine: {'line': b'[ 67%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__NavSatStatus__factories.cpp.o\n'}
+[87.098114] (-) TimerEvent: {}
+[87.143680] (ros1_bridge) StdoutLine: {'line': b'[ 68%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__PointCloud__factories.cpp.o\n'}
+[87.198217] (-) TimerEvent: {}
+[87.298404] (-) TimerEvent: {}
+[87.398586] (-) TimerEvent: {}
+[87.498778] (-) TimerEvent: {}
+[87.511174] (ros1_bridge) StdoutLine: {'line': b'[ 68%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__PointCloud2__factories.cpp.o\n'}
+[87.598873] (-) TimerEvent: {}
+[87.699071] (-) TimerEvent: {}
+[87.800656] (-) TimerEvent: {}
+[87.886120] (ros1_bridge) StdoutLine: {'line': b'[ 68%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__PointField__factories.cpp.o\n'}
+[87.903124] (-) TimerEvent: {}
+[88.003329] (-) TimerEvent: {}
+[88.073512] (ros1_bridge) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Range__factories.cpp.o\n'}
+[88.103428] (-) TimerEvent: {}
+[88.203621] (-) TimerEvent: {}
+[88.303803] (-) TimerEvent: {}
+[88.406057] (-) TimerEvent: {}
+[88.506234] (-) TimerEvent: {}
+[88.556259] (ros1_bridge) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__RegionOfInterest__factories.cpp.o\n'}
+[88.606360] (-) TimerEvent: {}
+[88.660725] (ros1_bridge) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__RelativeHumidity__factories.cpp.o\n'}
+[88.706471] (-) TimerEvent: {}
+[88.806694] (-) TimerEvent: {}
+[88.906914] (-) TimerEvent: {}
+[89.007127] (-) TimerEvent: {}
+[89.107335] (-) TimerEvent: {}
+[89.144780] (ros1_bridge) StdoutLine: {'line': b'[ 69%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__Temperature__factories.cpp.o\n'}
+[89.207447] (-) TimerEvent: {}
+[89.310126] (-) TimerEvent: {}
+[89.410326] (-) TimerEvent: {}
+[89.510533] (-) TimerEvent: {}
+[89.610736] (-) TimerEvent: {}
+[89.710942] (-) TimerEvent: {}
+[89.811125] (-) TimerEvent: {}
+[89.911332] (-) TimerEvent: {}
+[90.011548] (-) TimerEvent: {}
+[90.111760] (-) TimerEvent: {}
+[90.211966] (-) TimerEvent: {}
+[90.312186] (-) TimerEvent: {}
+[90.412390] (-) TimerEvent: {}
+[90.512597] (-) TimerEvent: {}
+[90.612806] (-) TimerEvent: {}
+[90.713008] (-) TimerEvent: {}
+[90.813237] (-) TimerEvent: {}
+[90.855107] (ros1_bridge) StdoutLine: {'line': b'[ 70%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__msg__TimeReference__factories.cpp.o\n'}
+[90.913348] (-) TimerEvent: {}
+[91.013564] (-) TimerEvent: {}
+[91.113778] (-) TimerEvent: {}
+[91.215126] (-) TimerEvent: {}
+[91.315338] (-) TimerEvent: {}
+[91.415550] (-) TimerEvent: {}
+[91.515771] (-) TimerEvent: {}
+[91.615994] (-) TimerEvent: {}
+[91.716217] (-) TimerEvent: {}
+[91.819126] (-) TimerEvent: {}
+[91.919334] (-) TimerEvent: {}
+[92.019544] (-) TimerEvent: {}
+[92.119761] (-) TimerEvent: {}
+[92.219971] (-) TimerEvent: {}
+[92.320195] (-) TimerEvent: {}
+[92.420407] (-) TimerEvent: {}
+[92.520632] (-) TimerEvent: {}
+[92.620852] (-) TimerEvent: {}
+[92.721075] (-) TimerEvent: {}
+[92.821287] (-) TimerEvent: {}
+[92.921498] (-) TimerEvent: {}
+[93.021709] (-) TimerEvent: {}
+[93.121917] (-) TimerEvent: {}
+[93.222128] (-) TimerEvent: {}
+[93.322336] (-) TimerEvent: {}
+[93.422539] (-) TimerEvent: {}
+[93.526127] (-) TimerEvent: {}
+[93.626334] (-) TimerEvent: {}
+[93.726550] (-) TimerEvent: {}
+[93.826757] (-) TimerEvent: {}
+[93.926959] (-) TimerEvent: {}
+[94.027134] (-) TimerEvent: {}
+[94.127357] (-) TimerEvent: {}
+[94.227591] (-) TimerEvent: {}
+[94.327820] (-) TimerEvent: {}
+[94.428034] (-) TimerEvent: {}
+[94.528261] (-) TimerEvent: {}
+[94.628482] (-) TimerEvent: {}
+[94.728692] (-) TimerEvent: {}
+[94.828923] (-) TimerEvent: {}
+[94.929133] (-) TimerEvent: {}
+[95.029352] (-) TimerEvent: {}
+[95.129571] (-) TimerEvent: {}
+[95.229777] (-) TimerEvent: {}
+[95.329991] (-) TimerEvent: {}
+[95.430209] (-) TimerEvent: {}
+[95.533132] (-) TimerEvent: {}
+[95.633341] (-) TimerEvent: {}
+[95.733547] (-) TimerEvent: {}
+[95.833756] (-) TimerEvent: {}
+[95.933973] (-) TimerEvent: {}
+[96.034187] (-) TimerEvent: {}
+[96.134392] (-) TimerEvent: {}
+[96.234600] (-) TimerEvent: {}
+[96.334807] (-) TimerEvent: {}
+[96.435033] (-) TimerEvent: {}
+[96.535261] (-) TimerEvent: {}
+[96.635466] (-) TimerEvent: {}
+[96.735690] (-) TimerEvent: {}
+[96.835920] (-) TimerEvent: {}
+[96.936124] (-) TimerEvent: {}
+[97.036317] (-) TimerEvent: {}
+[97.136507] (-) TimerEvent: {}
+[97.236677] (-) TimerEvent: {}
+[97.336930] (-) TimerEvent: {}
+[97.437086] (-) TimerEvent: {}
+[97.537273] (-) TimerEvent: {}
+[97.637472] (-) TimerEvent: {}
+[97.738728] (-) TimerEvent: {}
+[97.838999] (-) TimerEvent: {}
+[97.939600] (-) TimerEvent: {}
+[98.039806] (-) TimerEvent: {}
+[98.141130] (-) TimerEvent: {}
+[98.241324] (-) TimerEvent: {}
+[98.341527] (-) TimerEvent: {}
+[98.441725] (-) TimerEvent: {}
+[98.541912] (-) TimerEvent: {}
+[98.642104] (-) TimerEvent: {}
+[98.742278] (-) TimerEvent: {}
+[98.843123] (-) TimerEvent: {}
+[98.943333] (-) TimerEvent: {}
+[99.043549] (-) TimerEvent: {}
+[99.143741] (-) TimerEvent: {}
+[99.243961] (-) TimerEvent: {}
+[99.345136] (-) TimerEvent: {}
+[99.445383] (-) TimerEvent: {}
+[99.545592] (-) TimerEvent: {}
+[99.645773] (-) TimerEvent: {}
+[99.745972] (-) TimerEvent: {}
+[99.847118] (-) TimerEvent: {}
+[99.947319] (-) TimerEvent: {}
+[100.047510] (-) TimerEvent: {}
+[100.148131] (-) TimerEvent: {}
+[100.248354] (-) TimerEvent: {}
+[100.348526] (-) TimerEvent: {}
+[100.448719] (-) TimerEvent: {}
+[100.548904] (-) TimerEvent: {}
+[101.276948] (-) TimerEvent: {}
+[101.394040] (-) TimerEvent: {}
+[101.494235] (-) TimerEvent: {}
+[101.594425] (-) TimerEvent: {}
+[101.694614] (-) TimerEvent: {}
+[101.794805] (-) TimerEvent: {}
+[101.894988] (-) TimerEvent: {}
+[101.995183] (-) TimerEvent: {}
+[102.095357] (-) TimerEvent: {}
+[102.195535] (-) TimerEvent: {}
+[102.295719] (-) TimerEvent: {}
+[102.395891] (-) TimerEvent: {}
+[102.496079] (-) TimerEvent: {}
+[102.596256] (-) TimerEvent: {}
+[102.696432] (-) TimerEvent: {}
+[102.796611] (-) TimerEvent: {}
+[102.896820] (-) TimerEvent: {}
+[102.997013] (-) TimerEvent: {}
+[103.097201] (-) TimerEvent: {}
+[103.197400] (-) TimerEvent: {}
+[103.297596] (-) TimerEvent: {}
+[103.397785] (-) TimerEvent: {}
+[103.491023] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Bool__factories.cpp.o\n'}
+[103.527716] (-) TimerEvent: {}
+[103.527785] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/shape_msgs_factories.cpp.o\n'}
+[103.528026] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/statistics_msgs__msg__StatisticDataType__factories.cpp.o\n'}
+[103.528157] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/statistics_msgs_factories.cpp.o\n'}
+[103.528243] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/shape_msgs__msg__Plane__factories.cpp.o\n'}
+[103.528320] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs_factories.cpp.o\n'}
+[103.528410] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/sensor_msgs__srv__SetCameraInfo__factories.cpp.o\n'}
+[103.528482] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/shape_msgs__msg__SolidPrimitive__factories.cpp.o\n'}
+[103.528550] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/statistics_msgs__msg__MetricsMessage__factories.cpp.o\n'}
+[103.528620] (ros1_bridge) StdoutLine: {'line': b'[ 72%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/shape_msgs__msg__MeshTriangle__factories.cpp.o\n'}
+[103.528696] (ros1_bridge) StdoutLine: {'line': b'[ 73%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/statistics_msgs__msg__StatisticDataPoint__factories.cpp.o\n'}
+[103.528765] (ros1_bridge) StdoutLine: {'line': b'[ 74%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/shape_msgs__msg__Mesh__factories.cpp.o\n'}
+[103.528834] (ros1_bridge) StdoutLine: {'line': b'[ 74%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Byte__factories.cpp.o\n'}
+[103.627820] (-) TimerEvent: {}
+[103.661475] (ros1_bridge) StdoutLine: {'line': b'[ 74%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__ByteMultiArray__factories.cpp.o\n'}
+[103.728200] (-) TimerEvent: {}
+[103.828410] (-) TimerEvent: {}
+[103.850991] (ros1_bridge) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Char__factories.cpp.o\n'}
+[103.928507] (-) TimerEvent: {}
+[104.028689] (-) TimerEvent: {}
+[104.128860] (-) TimerEvent: {}
+[104.230121] (-) TimerEvent: {}
+[104.330309] (-) TimerEvent: {}
+[104.430496] (-) TimerEvent: {}
+[104.533992] (-) TimerEvent: {}
+[104.561994] (ros1_bridge) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__ColorRGBA__factories.cpp.o\n'}
+[104.634112] (-) TimerEvent: {}
+[104.737102] (-) TimerEvent: {}
+[104.837267] (-) TimerEvent: {}
+[104.937437] (-) TimerEvent: {}
+[105.037608] (-) TimerEvent: {}
+[105.058397] (ros1_bridge) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Empty__factories.cpp.o\n'}
+[105.137708] (-) TimerEvent: {}
+[105.237878] (-) TimerEvent: {}
+[105.333403] (ros1_bridge) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Float32__factories.cpp.o\n'}
+[105.338024] (-) TimerEvent: {}
+[105.352171] (ros1_bridge) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Float32MultiArray__factories.cpp.o\n'}
+[105.427758] (ros1_bridge) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Float64__factories.cpp.o\n'}
+[105.438126] (-) TimerEvent: {}
+[105.538313] (-) TimerEvent: {}
+[105.577510] (ros1_bridge) StdoutLine: {'line': b'[ 76%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Float64MultiArray__factories.cpp.o\n'}
+[105.587389] (ros1_bridge) StdoutLine: {'line': b'[ 77%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Header__factories.cpp.o\n'}
+[105.638412] (-) TimerEvent: {}
+[105.738631] (-) TimerEvent: {}
+[105.838807] (-) TimerEvent: {}
+[105.938972] (-) TimerEvent: {}
+[106.040122] (-) TimerEvent: {}
+[106.108093] (ros1_bridge) StdoutLine: {'line': b'[ 77%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int16__factories.cpp.o\n'}
+[106.141107] (-) TimerEvent: {}
+[106.241279] (-) TimerEvent: {}
+[106.341446] (-) TimerEvent: {}
+[106.442121] (-) TimerEvent: {}
+[106.544123] (-) TimerEvent: {}
+[106.644304] (-) TimerEvent: {}
+[106.744490] (-) TimerEvent: {}
+[106.844688] (-) TimerEvent: {}
+[106.944861] (-) TimerEvent: {}
+[107.045039] (-) TimerEvent: {}
+[107.145223] (-) TimerEvent: {}
+[107.245394] (-) TimerEvent: {}
+[107.314243] (ros1_bridge) StdoutLine: {'line': b'[ 77%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int16MultiArray__factories.cpp.o\n'}
+[107.324065] (ros1_bridge) StdoutLine: {'line': b'[ 78%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int32__factories.cpp.o\n'}
+[107.346758] (-) TimerEvent: {}
+[107.412181] (ros1_bridge) StdoutLine: {'line': b'[ 78%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int32MultiArray__factories.cpp.o\n'}
+[107.446857] (-) TimerEvent: {}
+[107.547039] (-) TimerEvent: {}
+[107.647223] (-) TimerEvent: {}
+[107.747639] (-) TimerEvent: {}
+[107.847829] (-) TimerEvent: {}
+[107.949109] (-) TimerEvent: {}
+[108.051123] (-) TimerEvent: {}
+[108.151299] (-) TimerEvent: {}
+[108.198627] (ros1_bridge) StdoutLine: {'line': b'[ 78%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int64__factories.cpp.o\n'}
+[108.251404] (-) TimerEvent: {}
+[108.353114] (-) TimerEvent: {}
+[108.453303] (-) TimerEvent: {}
+[108.553480] (-) TimerEvent: {}
+[108.653666] (-) TimerEvent: {}
+[108.753850] (-) TimerEvent: {}
+[108.854038] (-) TimerEvent: {}
+[108.954235] (-) TimerEvent: {}
+[109.054419] (-) TimerEvent: {}
+[109.156119] (-) TimerEvent: {}
+[109.256319] (-) TimerEvent: {}
+[109.356512] (-) TimerEvent: {}
+[109.445551] (ros1_bridge) StdoutLine: {'line': b'[ 79%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int64MultiArray__factories.cpp.o\n'}
+[109.456625] (-) TimerEvent: {}
+[109.560118] (-) TimerEvent: {}
+[109.660306] (-) TimerEvent: {}
+[109.760474] (-) TimerEvent: {}
+[109.860632] (-) TimerEvent: {}
+[109.960808] (-) TimerEvent: {}
+[110.070006] (-) TimerEvent: {}
+[110.170214] (-) TimerEvent: {}
+[110.272118] (-) TimerEvent: {}
+[110.372313] (-) TimerEvent: {}
+[110.472510] (-) TimerEvent: {}
+[110.572713] (-) TimerEvent: {}
+[110.674119] (-) TimerEvent: {}
+[110.774326] (-) TimerEvent: {}
+[110.874530] (-) TimerEvent: {}
+[110.993873] (-) TimerEvent: {}
+[111.096118] (-) TimerEvent: {}
+[111.196311] (-) TimerEvent: {}
+[111.296510] (-) TimerEvent: {}
+[111.396708] (-) TimerEvent: {}
+[111.496935] (-) TimerEvent: {}
+[111.597121] (-) TimerEvent: {}
+[111.697311] (-) TimerEvent: {}
+[111.797505] (-) TimerEvent: {}
+[111.897697] (-) TimerEvent: {}
+[112.000115] (-) TimerEvent: {}
+[112.100316] (-) TimerEvent: {}
+[112.200508] (-) TimerEvent: {}
+[112.300705] (-) TimerEvent: {}
+[112.400903] (-) TimerEvent: {}
+[112.514130] (-) TimerEvent: {}
+[112.614322] (-) TimerEvent: {}
+[112.714522] (-) TimerEvent: {}
+[112.814719] (-) TimerEvent: {}
+[112.914916] (-) TimerEvent: {}
+[113.015146] (-) TimerEvent: {}
+[113.117116] (-) TimerEvent: {}
+[113.169014] (ros1_bridge) StdoutLine: {'line': b'[ 79%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int8__factories.cpp.o\n'}
+[113.217221] (-) TimerEvent: {}
+[113.317416] (-) TimerEvent: {}
+[113.417608] (-) TimerEvent: {}
+[113.517799] (-) TimerEvent: {}
+[113.617993] (-) TimerEvent: {}
+[113.718195] (-) TimerEvent: {}
+[113.818380] (-) TimerEvent: {}
+[113.844830] (ros1_bridge) StdoutLine: {'line': b'[ 79%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__Int8MultiArray__factories.cpp.o\n'}
+[113.919114] (-) TimerEvent: {}
+[114.019296] (-) TimerEvent: {}
+[114.119513] (-) TimerEvent: {}
+[114.138258] (ros1_bridge) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__MultiArrayDimension__factories.cpp.o\n'}
+[114.219613] (-) TimerEvent: {}
+[114.321123] (-) TimerEvent: {}
+[114.421339] (-) TimerEvent: {}
+[114.521936] (-) TimerEvent: {}
+[114.611342] (ros1_bridge) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__MultiArrayLayout__factories.cpp.o\n'}
+[114.623189] (-) TimerEvent: {}
+[114.723404] (-) TimerEvent: {}
+[114.825111] (-) TimerEvent: {}
+[114.925305] (-) TimerEvent: {}
+[115.025515] (-) TimerEvent: {}
+[115.125721] (-) TimerEvent: {}
+[115.147896] (ros1_bridge) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__String__factories.cpp.o\n'}
+[115.225830] (-) TimerEvent: {}
+[115.326030] (-) TimerEvent: {}
+[115.426238] (-) TimerEvent: {}
+[115.526439] (-) TimerEvent: {}
+[115.628121] (-) TimerEvent: {}
+[115.633112] (ros1_bridge) StdoutLine: {'line': b'[ 81%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt16__factories.cpp.o\n'}
+[115.728226] (-) TimerEvent: {}
+[115.828437] (-) TimerEvent: {}
+[115.928644] (-) TimerEvent: {}
+[116.028843] (-) TimerEvent: {}
+[116.129039] (-) TimerEvent: {}
+[116.229242] (-) TimerEvent: {}
+[116.329430] (-) TimerEvent: {}
+[116.431176] (-) TimerEvent: {}
+[116.531373] (-) TimerEvent: {}
+[116.631586] (-) TimerEvent: {}
+[116.731810] (-) TimerEvent: {}
+[116.832021] (-) TimerEvent: {}
+[116.932215] (-) TimerEvent: {}
+[117.032405] (-) TimerEvent: {}
+[117.132622] (-) TimerEvent: {}
+[117.232825] (-) TimerEvent: {}
+[117.334130] (-) TimerEvent: {}
+[117.434333] (-) TimerEvent: {}
+[117.534529] (-) TimerEvent: {}
+[117.634721] (-) TimerEvent: {}
+[117.734907] (-) TimerEvent: {}
+[117.835101] (-) TimerEvent: {}
+[117.935297] (-) TimerEvent: {}
+[118.035488] (-) TimerEvent: {}
+[118.137145] (-) TimerEvent: {}
+[118.237344] (-) TimerEvent: {}
+[118.337536] (-) TimerEvent: {}
+[118.437729] (-) TimerEvent: {}
+[118.537915] (-) TimerEvent: {}
+[118.638115] (-) TimerEvent: {}
+[118.738303] (-) TimerEvent: {}
+[118.838488] (-) TimerEvent: {}
+[118.938674] (-) TimerEvent: {}
+[119.038857] (-) TimerEvent: {}
+[119.140113] (-) TimerEvent: {}
+[119.240288] (-) TimerEvent: {}
+[119.328668] (ros1_bridge) StdoutLine: {'line': b'[ 81%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt16MultiArray__factories.cpp.o\n'}
+[119.340383] (-) TimerEvent: {}
+[119.440550] (-) TimerEvent: {}
+[119.540725] (-) TimerEvent: {}
+[119.640899] (-) TimerEvent: {}
+[119.741080] (-) TimerEvent: {}
+[119.842112] (-) TimerEvent: {}
+[119.942296] (-) TimerEvent: {}
+[120.042491] (-) TimerEvent: {}
+[120.142682] (-) TimerEvent: {}
+[120.242909] (-) TimerEvent: {}
+[120.343097] (-) TimerEvent: {}
+[120.447122] (-) TimerEvent: {}
+[120.547330] (-) TimerEvent: {}
+[120.647518] (-) TimerEvent: {}
+[120.747699] (-) TimerEvent: {}
+[120.847890] (-) TimerEvent: {}
+[120.948094] (-) TimerEvent: {}
+[121.048291] (-) TimerEvent: {}
+[121.148487] (-) TimerEvent: {}
+[121.248670] (-) TimerEvent: {}
+[121.348861] (-) TimerEvent: {}
+[121.449037] (-) TimerEvent: {}
+[121.549223] (-) TimerEvent: {}
+[121.649399] (-) TimerEvent: {}
+[121.749578] (-) TimerEvent: {}
+[121.849756] (-) TimerEvent: {}
+[121.952111] (-) TimerEvent: {}
+[122.052287] (-) TimerEvent: {}
+[122.152465] (-) TimerEvent: {}
+[122.252655] (-) TimerEvent: {}
+[122.352846] (-) TimerEvent: {}
+[122.454151] (-) TimerEvent: {}
+[122.554333] (-) TimerEvent: {}
+[122.654524] (-) TimerEvent: {}
+[122.754719] (-) TimerEvent: {}
+[122.856238] (-) TimerEvent: {}
+[122.977127] (-) TimerEvent: {}
+[123.077323] (-) TimerEvent: {}
+[123.178125] (-) TimerEvent: {}
+[123.278300] (-) TimerEvent: {}
+[123.378476] (-) TimerEvent: {}
+[123.478650] (-) TimerEvent: {}
+[123.581831] (-) TimerEvent: {}
+[123.682339] (-) TimerEvent: {}
+[123.745188] (ros1_bridge) StdoutLine: {'line': b'[ 82%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt32MultiArray__factories.cpp.o\n'}
+[123.745922] (ros1_bridge) StdoutLine: {'line': b'[ 82%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt32__factories.cpp.o\n'}
+[123.782440] (-) TimerEvent: {}
+[123.882626] (-) TimerEvent: {}
+[123.930006] (ros1_bridge) StdoutLine: {'line': b'[ 82%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt64__factories.cpp.o\n'}
+[123.983056] (-) TimerEvent: {}
+[124.083247] (-) TimerEvent: {}
+[124.183438] (-) TimerEvent: {}
+[124.283616] (-) TimerEvent: {}
+[124.290014] (ros1_bridge) StdoutLine: {'line': b'[ 82%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt64MultiArray__factories.cpp.o\n'}
+[124.301994] (ros1_bridge) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt8__factories.cpp.o\n'}
+[124.383730] (-) TimerEvent: {}
+[124.396844] (ros1_bridge) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_msgs__msg__UInt8MultiArray__factories.cpp.o\n'}
+[124.484140] (-) TimerEvent: {}
+[124.588116] (-) TimerEvent: {}
+[124.688300] (-) TimerEvent: {}
+[124.788485] (-) TimerEvent: {}
+[124.842629] (ros1_bridge) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_srvs_factories.cpp.o\n'}
+[124.888596] (-) TimerEvent: {}
+[124.988791] (-) TimerEvent: {}
+[125.004306] (ros1_bridge) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_srvs__srv__Empty__factories.cpp.o\n'}
+[125.088896] (-) TimerEvent: {}
+[125.153673] (ros1_bridge) StdoutLine: {'line': b'[ 84%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_srvs__srv__SetBool__factories.cpp.o\n'}
+[125.188998] (-) TimerEvent: {}
+[125.289180] (-) TimerEvent: {}
+[125.389400] (-) TimerEvent: {}
+[125.458507] (ros1_bridge) StdoutLine: {'line': b'[ 84%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/std_srvs__srv__Trigger__factories.cpp.o\n'}
+[125.489504] (-) TimerEvent: {}
+[125.589116] (ros1_bridge) StdoutLine: {'line': b'[ 84%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/stereo_msgs_factories.cpp.o\n'}
+[125.589561] (-) TimerEvent: {}
+[125.623964] (ros1_bridge) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/stereo_msgs__msg__DisparityImage__factories.cpp.o\n'}
+[125.624132] (ros1_bridge) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/tf2_msgs_factories.cpp.o\n'}
+[125.645532] (ros1_bridge) StdoutLine: {'line': b'[ 85%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/tf2_msgs__msg__TF2Error__factories.cpp.o\n'}
+[125.689672] (-) TimerEvent: {}
+[125.701297] (ros1_bridge) StdoutLine: {'line': b'[ 86%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/tf2_msgs__msg__TFMessage__factories.cpp.o\n'}
+[125.789774] (-) TimerEvent: {}
+[125.889949] (-) TimerEvent: {}
+[125.990113] (-) TimerEvent: {}
+[126.084589] (ros1_bridge) StdoutLine: {'line': b'[ 86%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/tf2_msgs__srv__FrameGraph__factories.cpp.o\n'}
+[126.090216] (-) TimerEvent: {}
+[126.190386] (-) TimerEvent: {}
+[126.264813] (ros1_bridge) StdoutLine: {'line': b'[ 86%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/tf2_msgs__action__LookupTransform__factories.cpp.o\n'}
+[126.290491] (-) TimerEvent: {}
+[126.337846] (ros1_bridge) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/trajectory_msgs_factories.cpp.o\n'}
+[126.390594] (-) TimerEvent: {}
+[126.393233] (ros1_bridge) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/trajectory_msgs__msg__JointTrajectory__factories.cpp.o\n'}
+[126.490702] (-) TimerEvent: {}
+[126.590873] (-) TimerEvent: {}
+[126.691060] (-) TimerEvent: {}
+[126.791247] (-) TimerEvent: {}
+[126.891423] (-) TimerEvent: {}
+[126.991605] (-) TimerEvent: {}
+[127.091774] (-) TimerEvent: {}
+[127.191949] (-) TimerEvent: {}
+[127.296114] (-) TimerEvent: {}
+[127.396299] (-) TimerEvent: {}
+[127.496473] (-) TimerEvent: {}
+[127.596644] (-) TimerEvent: {}
+[127.696814] (-) TimerEvent: {}
+[127.784787] (ros1_bridge) StdoutLine: {'line': b'[ 87%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/trajectory_msgs__msg__JointTrajectoryPoint__factories.cpp.o\n'}
+[127.796938] (-) TimerEvent: {}
+[127.897113] (-) TimerEvent: {}
+[127.997288] (-) TimerEvent: {}
+[128.097462] (-) TimerEvent: {}
+[128.197650] (-) TimerEvent: {}
+[128.250383] (ros1_bridge) StdoutLine: {'line': b'[ 88%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/trajectory_msgs__msg__MultiDOFJointTrajectory__factories.cpp.o\n'}
+[128.297755] (-) TimerEvent: {}
+[128.397939] (-) TimerEvent: {}
+[128.498124] (-) TimerEvent: {}
+[128.598317] (-) TimerEvent: {}
+[128.698514] (-) TimerEvent: {}
+[128.798694] (-) TimerEvent: {}
+[128.898870] (-) TimerEvent: {}
+[128.999070] (-) TimerEvent: {}
+[129.099265] (-) TimerEvent: {}
+[129.199459] (-) TimerEvent: {}
+[129.299645] (-) TimerEvent: {}
+[129.399833] (-) TimerEvent: {}
+[129.500018] (-) TimerEvent: {}
+[129.600216] (-) TimerEvent: {}
+[129.700398] (-) TimerEvent: {}
+[129.800579] (-) TimerEvent: {}
+[129.900764] (-) TimerEvent: {}
+[130.003118] (-) TimerEvent: {}
+[130.103303] (-) TimerEvent: {}
+[130.203492] (-) TimerEvent: {}
+[130.303673] (-) TimerEvent: {}
+[130.403860] (-) TimerEvent: {}
+[130.504059] (-) TimerEvent: {}
+[130.604245] (-) TimerEvent: {}
+[130.704442] (-) TimerEvent: {}
+[130.804627] (-) TimerEvent: {}
+[130.904823] (-) TimerEvent: {}
+[131.005024] (-) TimerEvent: {}
+[131.105231] (-) TimerEvent: {}
+[131.205421] (-) TimerEvent: {}
+[131.305625] (-) TimerEvent: {}
+[131.406113] (-) TimerEvent: {}
+[131.506309] (-) TimerEvent: {}
+[131.607115] (-) TimerEvent: {}
+[131.707323] (-) TimerEvent: {}
+[131.807529] (-) TimerEvent: {}
+[131.907725] (-) TimerEvent: {}
+[131.936733] (ros1_bridge) StdoutLine: {'line': b'[ 88%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/trajectory_msgs__msg__MultiDOFJointTrajectoryPoint__factories.cpp.o\n'}
+[132.007840] (-) TimerEvent: {}
+[132.108728] (-) TimerEvent: {}
+[132.208920] (-) TimerEvent: {}
+[132.309105] (-) TimerEvent: {}
+[132.412115] (-) TimerEvent: {}
+[132.458849] (ros1_bridge) StdoutLine: {'line': b'[ 88%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim_factories.cpp.o\n'}
+[132.512215] (-) TimerEvent: {}
+[132.578906] (ros1_bridge) StdoutLine: {'line': b'[ 89%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__action__RotateAbsolute__factories.cpp.o\n'}
+[132.612319] (-) TimerEvent: {}
+[132.712501] (-) TimerEvent: {}
+[132.808991] (ros1_bridge) StdoutLine: {'line': b'[ 89%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__msg__Color__factories.cpp.o\n'}
+[132.812602] (-) TimerEvent: {}
+[132.912783] (-) TimerEvent: {}
+[133.012966] (-) TimerEvent: {}
+[133.113119] (-) TimerEvent: {}
+[133.213305] (-) TimerEvent: {}
+[133.313497] (-) TimerEvent: {}
+[133.360993] (ros1_bridge) StdoutLine: {'line': b'[ 89%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__msg__Pose__factories.cpp.o\n'}
+[133.413599] (-) TimerEvent: {}
+[133.447277] (ros1_bridge) StdoutLine: {'line': b'[ 89%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__srv__Kill__factories.cpp.o\n'}
+[133.513710] (-) TimerEvent: {}
+[133.613898] (-) TimerEvent: {}
+[133.716493] (-) TimerEvent: {}
+[133.816665] (-) TimerEvent: {}
+[133.916842] (-) TimerEvent: {}
+[134.017021] (-) TimerEvent: {}
+[134.117208] (-) TimerEvent: {}
+[134.217403] (-) TimerEvent: {}
+[134.263903] (ros1_bridge) StdoutLine: {'line': b'[ 90%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__srv__SetPen__factories.cpp.o\n'}
+[134.317501] (-) TimerEvent: {}
+[134.417684] (-) TimerEvent: {}
+[134.517847] (-) TimerEvent: {}
+[134.618024] (-) TimerEvent: {}
+[134.719116] (-) TimerEvent: {}
+[134.744782] (ros1_bridge) StdoutLine: {'line': b'[ 90%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__srv__Spawn__factories.cpp.o\n'}
+[134.819231] (-) TimerEvent: {}
+[134.901098] (ros1_bridge) StdoutLine: {'line': b'[ 90%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__srv__TeleportAbsolute__factories.cpp.o\n'}
+[134.921112] (-) TimerEvent: {}
+[135.021291] (-) TimerEvent: {}
+[135.121482] (-) TimerEvent: {}
+[135.190139] (ros1_bridge) StdoutLine: {'line': b'[ 91%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/turtlesim__srv__TeleportRelative__factories.cpp.o\n'}
+[135.221579] (-) TimerEvent: {}
+[135.321769] (-) TimerEvent: {}
+[135.421956] (-) TimerEvent: {}
+[135.522118] (-) TimerEvent: {}
+[135.622306] (-) TimerEvent: {}
+[135.722487] (-) TimerEvent: {}
+[135.804873] (ros1_bridge) StdoutLine: {'line': b'[ 91%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/unique_identifier_msgs_factories.cpp.o\n'}
+[135.822599] (-) TimerEvent: {}
+[135.922802] (-) TimerEvent: {}
+[135.990544] (ros1_bridge) StdoutLine: {'line': b'[ 91%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/unique_identifier_msgs__msg__UUID__factories.cpp.o\n'}
+[136.022904] (-) TimerEvent: {}
+[136.123098] (-) TimerEvent: {}
+[136.223282] (-) TimerEvent: {}
+[136.323482] (-) TimerEvent: {}
+[136.423676] (-) TimerEvent: {}
+[136.523890] (-) TimerEvent: {}
+[136.624113] (-) TimerEvent: {}
+[136.725119] (-) TimerEvent: {}
+[136.791681] (ros1_bridge) StdoutLine: {'line': b'[ 92%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs_factories.cpp.o\n'}
+[136.825246] (-) TimerEvent: {}
+[136.925460] (-) TimerEvent: {}
+[137.025654] (-) TimerEvent: {}
+[137.128156] (-) TimerEvent: {}
+[137.236137] (-) TimerEvent: {}
+[137.336347] (-) TimerEvent: {}
+[137.436539] (-) TimerEvent: {}
+[137.536751] (-) TimerEvent: {}
+[137.636952] (-) TimerEvent: {}
+[137.737123] (-) TimerEvent: {}
+[137.837317] (-) TimerEvent: {}
+[137.937516] (-) TimerEvent: {}
+[138.037729] (-) TimerEvent: {}
+[138.137915] (-) TimerEvent: {}
+[138.238112] (-) TimerEvent: {}
+[138.338293] (-) TimerEvent: {}
+[138.438482] (-) TimerEvent: {}
+[138.538679] (-) TimerEvent: {}
+[138.638874] (-) TimerEvent: {}
+[138.669142] (ros1_bridge) StdoutLine: {'line': b'[ 92%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__ImageMarker__factories.cpp.o\n'}
+[138.739009] (-) TimerEvent: {}
+[138.839206] (-) TimerEvent: {}
+[138.939390] (-) TimerEvent: {}
+[139.039572] (-) TimerEvent: {}
+[139.139750] (-) TimerEvent: {}
+[139.242122] (-) TimerEvent: {}
+[139.342308] (-) TimerEvent: {}
+[139.421465] (ros1_bridge) StdoutLine: {'line': b'[ 92%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarker__factories.cpp.o\n'}
+[139.442415] (-) TimerEvent: {}
+[139.542597] (-) TimerEvent: {}
+[139.642898] (-) TimerEvent: {}
+[139.743090] (-) TimerEvent: {}
+[139.843261] (-) TimerEvent: {}
+[139.943437] (-) TimerEvent: {}
+[140.043615] (-) TimerEvent: {}
+[140.143794] (-) TimerEvent: {}
+[140.193833] (ros1_bridge) StdoutLine: {'line': b'[ 93%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarkerControl__factories.cpp.o\n'}
+[140.243902] (-) TimerEvent: {}
+[140.344106] (-) TimerEvent: {}
+[140.374922] (ros1_bridge) StdoutLine: {'line': b'[ 93%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarkerFeedback__factories.cpp.o\n'}
+[140.406113] (ros1_bridge) StdoutLine: {'line': b'[ 93%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarkerInit__factories.cpp.o\n'}
+[140.444206] (-) TimerEvent: {}
+[140.544385] (-) TimerEvent: {}
+[140.644571] (-) TimerEvent: {}
+[140.744748] (-) TimerEvent: {}
+[140.844924] (-) TimerEvent: {}
+[140.945108] (-) TimerEvent: {}
+[141.045277] (-) TimerEvent: {}
+[141.145450] (-) TimerEvent: {}
+[141.245639] (-) TimerEvent: {}
+[141.345819] (-) TimerEvent: {}
+[141.445993] (-) TimerEvent: {}
+[141.548117] (-) TimerEvent: {}
+[141.648303] (-) TimerEvent: {}
+[141.655374] (ros1_bridge) StdoutLine: {'line': b'[ 94%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarkerPose__factories.cpp.o\n'}
+[141.748410] (-) TimerEvent: {}
+[141.848604] (-) TimerEvent: {}
+[141.948787] (-) TimerEvent: {}
+[142.048964] (-) TimerEvent: {}
+[142.149113] (-) TimerEvent: {}
+[142.249305] (-) TimerEvent: {}
+[142.349518] (-) TimerEvent: {}
+[142.449717] (-) TimerEvent: {}
+[142.549901] (-) TimerEvent: {}
+[142.650088] (-) TimerEvent: {}
+[142.752127] (-) TimerEvent: {}
+[142.852324] (-) TimerEvent: {}
+[142.952517] (-) TimerEvent: {}
+[143.052706] (-) TimerEvent: {}
+[143.152907] (-) TimerEvent: {}
+[143.253110] (-) TimerEvent: {}
+[143.353288] (-) TimerEvent: {}
+[143.453472] (-) TimerEvent: {}
+[143.553653] (-) TimerEvent: {}
+[143.653835] (-) TimerEvent: {}
+[143.754025] (-) TimerEvent: {}
+[143.803215] (ros1_bridge) StdoutLine: {'line': b'[ 94%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__InteractiveMarkerUpdate__factories.cpp.o\n'}
+[143.854117] (-) TimerEvent: {}
+[143.957114] (-) TimerEvent: {}
+[144.057314] (-) TimerEvent: {}
+[144.157508] (-) TimerEvent: {}
+[144.195771] (ros1_bridge) StdoutLine: {'line': b'[ 94%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__Marker__factories.cpp.o\n'}
+[144.257623] (-) TimerEvent: {}
+[144.357813] (-) TimerEvent: {}
+[144.358765] (ros1_bridge) StdoutLine: {'line': b'[ 95%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__MarkerArray__factories.cpp.o\n'}
+[144.457922] (-) TimerEvent: {}
+[144.484431] (ros1_bridge) StdoutLine: {'line': b'[ 95%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__MenuEntry__factories.cpp.o\n'}
+[144.532245] (ros1_bridge) StdoutLine: {'line': b'[ 95%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__MeshFile__factories.cpp.o\n'}
+[144.558025] (-) TimerEvent: {}
+[144.658204] (-) TimerEvent: {}
+[144.728131] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__msg__UVCoordinate__factories.cpp.o\n'}
+[144.758305] (-) TimerEvent: {}
+[144.858479] (-) TimerEvent: {}
+[144.876938] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/ros1_bridge.dir/generated/visualization_msgs__srv__GetInteractiveMarkers__factories.cpp.o\n'}
+[144.958585] (-) TimerEvent: {}
+[145.060129] (-) TimerEvent: {}
+[145.160312] (-) TimerEvent: {}
+[145.260496] (-) TimerEvent: {}
+[145.360683] (-) TimerEvent: {}
+[145.460870] (-) TimerEvent: {}
+[145.561072] (-) TimerEvent: {}
+[145.661252] (-) TimerEvent: {}
+[145.761442] (-) TimerEvent: {}
+[145.861629] (-) TimerEvent: {}
+[145.961809] (-) TimerEvent: {}
+[146.062402] (-) TimerEvent: {}
+[146.162596] (-) TimerEvent: {}
+[146.262782] (-) TimerEvent: {}
+[146.362965] (-) TimerEvent: {}
+[146.463139] (-) TimerEvent: {}
+[146.563402] (-) TimerEvent: {}
+[146.663615] (-) TimerEvent: {}
+[146.763845] (-) TimerEvent: {}
+[146.864081] (-) TimerEvent: {}
+[146.964315] (-) TimerEvent: {}
+[147.064544] (-) TimerEvent: {}
+[147.164849] (-) TimerEvent: {}
+[147.265134] (-) TimerEvent: {}
+[147.365338] (-) TimerEvent: {}
+[147.465550] (-) TimerEvent: {}
+[147.565765] (-) TimerEvent: {}
+[147.665983] (-) TimerEvent: {}
+[147.766204] (-) TimerEvent: {}
+[147.866435] (-) TimerEvent: {}
+[147.966720] (-) TimerEvent: {}
+[148.066956] (-) TimerEvent: {}
+[148.167197] (-) TimerEvent: {}
+[148.267461] (-) TimerEvent: {}
+[148.367669] (-) TimerEvent: {}
+[148.467876] (-) TimerEvent: {}
+[148.568086] (-) TimerEvent: {}
+[148.668325] (-) TimerEvent: {}
+[148.768560] (-) TimerEvent: {}
+[148.868776] (-) TimerEvent: {}
+[148.968981] (-) TimerEvent: {}
+[149.069186] (-) TimerEvent: {}
+[149.169391] (-) TimerEvent: {}
+[149.269618] (-) TimerEvent: {}
+[149.369825] (-) TimerEvent: {}
+[149.470032] (-) TimerEvent: {}
+[149.570245] (-) TimerEvent: {}
+[149.670447] (-) TimerEvent: {}
+[149.770654] (-) TimerEvent: {}
+[149.870855] (-) TimerEvent: {}
+[149.971095] (-) TimerEvent: {}
+[150.071280] (-) TimerEvent: {}
+[150.171463] (-) TimerEvent: {}
+[150.271628] (-) TimerEvent: {}
+[150.371813] (-) TimerEvent: {}
+[150.472129] (-) TimerEvent: {}
+[150.572318] (-) TimerEvent: {}
+[150.672499] (-) TimerEvent: {}
+[150.772734] (-) TimerEvent: {}
+[150.872915] (-) TimerEvent: {}
+[150.973136] (-) TimerEvent: {}
+[151.073381] (-) TimerEvent: {}
+[151.173567] (-) TimerEvent: {}
+[151.273768] (-) TimerEvent: {}
+[151.374001] (-) TimerEvent: {}
+[151.474162] (-) TimerEvent: {}
+[151.574335] (-) TimerEvent: {}
+[151.674545] (-) TimerEvent: {}
+[151.774812] (-) TimerEvent: {}
+[151.875082] (-) TimerEvent: {}
+[151.975260] (-) TimerEvent: {}
+[152.075460] (-) TimerEvent: {}
+[152.175678] (-) TimerEvent: {}
+[152.275885] (-) TimerEvent: {}
+[152.376206] (-) TimerEvent: {}
+[152.476390] (-) TimerEvent: {}
+[152.576579] (-) TimerEvent: {}
+[152.676767] (-) TimerEvent: {}
+[152.776995] (-) TimerEvent: {}
+[152.877209] (-) TimerEvent: {}
+[152.977434] (-) TimerEvent: {}
+[153.077660] (-) TimerEvent: {}
+[153.177865] (-) TimerEvent: {}
+[153.278057] (-) TimerEvent: {}
+[153.378194] (-) TimerEvent: {}
+[153.478431] (-) TimerEvent: {}
+[153.578672] (-) TimerEvent: {}
+[153.678893] (-) TimerEvent: {}
+[153.779208] (-) TimerEvent: {}
+[153.879404] (-) TimerEvent: {}
+[153.979585] (-) TimerEvent: {}
+[154.079818] (-) TimerEvent: {}
+[154.180073] (-) TimerEvent: {}
+[154.280272] (-) TimerEvent: {}
+[154.380477] (-) TimerEvent: {}
+[154.480668] (-) TimerEvent: {}
+[154.580932] (-) TimerEvent: {}
+[154.681188] (-) TimerEvent: {}
+[154.781425] (-) TimerEvent: {}
+[154.881605] (-) TimerEvent: {}
+[154.981874] (-) TimerEvent: {}
+[155.082146] (-) TimerEvent: {}
+[155.182331] (-) TimerEvent: {}
+[155.282541] (-) TimerEvent: {}
+[155.382743] (-) TimerEvent: {}
+[155.482995] (-) TimerEvent: {}
+[155.583189] (-) TimerEvent: {}
+[155.683377] (-) TimerEvent: {}
+[155.783597] (-) TimerEvent: {}
+[155.883864] (-) TimerEvent: {}
+[155.984161] (-) TimerEvent: {}
+[156.084342] (-) TimerEvent: {}
+[156.184625] (-) TimerEvent: {}
+[156.284834] (-) TimerEvent: {}
+[156.385133] (-) TimerEvent: {}
+[156.485432] (-) TimerEvent: {}
+[156.585716] (-) TimerEvent: {}
+[156.685979] (-) TimerEvent: {}
+[156.786235] (-) TimerEvent: {}
+[156.886525] (-) TimerEvent: {}
+[156.986814] (-) TimerEvent: {}
+[157.087083] (-) TimerEvent: {}
+[157.187284] (-) TimerEvent: {}
+[157.287568] (-) TimerEvent: {}
+[157.387848] (-) TimerEvent: {}
+[157.488129] (-) TimerEvent: {}
+[157.588388] (-) TimerEvent: {}
+[157.688676] (-) TimerEvent: {}
+[157.788910] (-) TimerEvent: {}
+[157.889157] (-) TimerEvent: {}
+[157.989451] (-) TimerEvent: {}
+[158.089679] (-) TimerEvent: {}
+[158.189968] (-) TimerEvent: {}
+[158.290218] (-) TimerEvent: {}
+[158.390514] (-) TimerEvent: {}
+[158.490699] (-) TimerEvent: {}
+[158.590963] (-) TimerEvent: {}
+[158.645366] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Linking CXX shared library libros1_bridge.so\n'}
+[158.691378] (-) TimerEvent: {}
+[158.791631] (-) TimerEvent: {}
+[158.891920] (-) TimerEvent: {}
+[158.992233] (-) TimerEvent: {}
+[159.092408] (-) TimerEvent: {}
+[159.192568] (-) TimerEvent: {}
+[159.292756] (-) TimerEvent: {}
+[159.392987] (-) TimerEvent: {}
+[159.493308] (-) TimerEvent: {}
+[159.593498] (-) TimerEvent: {}
+[159.693862] (-) TimerEvent: {}
+[159.794224] (-) TimerEvent: {}
+[159.894391] (-) TimerEvent: {}
+[159.994596] (-) TimerEvent: {}
+[160.094859] (-) TimerEvent: {}
+[160.195141] (-) TimerEvent: {}
+[160.295298] (-) TimerEvent: {}
+[160.395485] (-) TimerEvent: {}
+[160.495647] (-) TimerEvent: {}
+[160.595941] (-) TimerEvent: {}
+[160.696143] (-) TimerEvent: {}
+[160.796314] (-) TimerEvent: {}
+[160.896495] (-) TimerEvent: {}
+[160.996741] (-) TimerEvent: {}
+[161.097001] (-) TimerEvent: {}
+[161.197214] (-) TimerEvent: {}
+[161.297388] (-) TimerEvent: {}
+[161.397579] (-) TimerEvent: {}
+[161.497826] (-) TimerEvent: {}
+[161.598199] (-) TimerEvent: {}
+[161.698367] (-) TimerEvent: {}
+[161.798540] (-) TimerEvent: {}
+[161.898748] (-) TimerEvent: {}
+[161.999011] (-) TimerEvent: {}
+[162.099312] (-) TimerEvent: {}
+[162.199462] (-) TimerEvent: {}
+[162.299629] (-) TimerEvent: {}
+[162.399817] (-) TimerEvent: {}
+[162.500068] (-) TimerEvent: {}
+[162.600348] (-) TimerEvent: {}
+[162.700531] (-) TimerEvent: {}
+[162.800755] (-) TimerEvent: {}
+[162.900974] (-) TimerEvent: {}
+[163.001223] (-) TimerEvent: {}
+[163.101380] (-) TimerEvent: {}
+[163.201599] (-) TimerEvent: {}
+[163.301894] (-) TimerEvent: {}
+[163.402158] (-) TimerEvent: {}
+[163.502423] (-) TimerEvent: {}
+[163.602612] (-) TimerEvent: {}
+[163.702859] (-) TimerEvent: {}
+[163.803056] (-) TimerEvent: {}
+[163.903331] (-) TimerEvent: {}
+[164.003600] (-) TimerEvent: {}
+[164.103857] (-) TimerEvent: {}
+[164.204136] (-) TimerEvent: {}
+[164.304310] (-) TimerEvent: {}
+[164.404553] (-) TimerEvent: {}
+[164.504750] (-) TimerEvent: {}
+[164.605002] (-) TimerEvent: {}
+[164.705303] (-) TimerEvent: {}
+[164.805604] (-) TimerEvent: {}
+[164.905913] (-) TimerEvent: {}
+[165.006121] (-) TimerEvent: {}
+[165.106356] (-) TimerEvent: {}
+[165.206605] (-) TimerEvent: {}
+[165.306860] (-) TimerEvent: {}
+[165.407122] (-) TimerEvent: {}
+[165.507288] (-) TimerEvent: {}
+[165.607611] (-) TimerEvent: {}
+[165.707876] (-) TimerEvent: {}
+[165.808127] (-) TimerEvent: {}
+[165.908449] (-) TimerEvent: {}
+[166.008742] (-) TimerEvent: {}
+[166.109006] (-) TimerEvent: {}
+[166.209337] (-) TimerEvent: {}
+[166.309539] (-) TimerEvent: {}
+[166.409786] (-) TimerEvent: {}
+[166.510039] (-) TimerEvent: {}
+[166.610212] (-) TimerEvent: {}
+[166.710380] (-) TimerEvent: {}
+[166.810572] (-) TimerEvent: {}
+[166.910791] (-) TimerEvent: {}
+[167.010971] (-) TimerEvent: {}
+[167.011161] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Built target ros1_bridge\n'}
+[167.034568] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/test_convert_generic.dir/test/test_convert_generic.cpp.o\n'}
+[167.034689] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/test_ros2_to_ros1_serialization.dir/test/test_ros2_to_ros1_serialization.cpp.o\n'}
+[167.034728] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/parameter_bridge.dir/src/parameter_bridge.cpp.o\n'}
+[167.034760] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/static_bridge.dir/src/static_bridge.cpp.o\n'}
+[167.036156] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/action_bridge.dir/src/action_bridge.cpp.o\n'}
+[167.036384] (ros1_bridge) StdoutLine: {'line': b'[ 96%] Building CXX object CMakeFiles/dynamic_bridge.dir/src/dynamic_bridge.cpp.o\n'}
+[167.111130] (-) TimerEvent: {}
+[167.211271] (-) TimerEvent: {}
+[167.311448] (-) TimerEvent: {}
+[167.411662] (-) TimerEvent: {}
+[167.511896] (-) TimerEvent: {}
+[167.612156] (-) TimerEvent: {}
+[167.712314] (-) TimerEvent: {}
+[167.812514] (-) TimerEvent: {}
+[167.912720] (-) TimerEvent: {}
+[168.012916] (-) TimerEvent: {}
+[168.113190] (-) TimerEvent: {}
+[168.213396] (-) TimerEvent: {}
+[168.313576] (-) TimerEvent: {}
+[168.413840] (-) TimerEvent: {}
+[168.514142] (-) TimerEvent: {}
+[168.614328] (-) TimerEvent: {}
+[168.714536] (-) TimerEvent: {}
+[168.814746] (-) TimerEvent: {}
+[168.915039] (-) TimerEvent: {}
+[169.015248] (-) TimerEvent: {}
+[169.115438] (-) TimerEvent: {}
+[169.215658] (-) TimerEvent: {}
+[169.315956] (-) TimerEvent: {}
+[169.416229] (-) TimerEvent: {}
+[169.516430] (-) TimerEvent: {}
+[169.616658] (-) TimerEvent: {}
+[169.716964] (-) TimerEvent: {}
+[169.817248] (-) TimerEvent: {}
+[169.917464] (-) TimerEvent: {}
+[170.017688] (-) TimerEvent: {}
+[170.118018] (-) TimerEvent: {}
+[170.218243] (-) TimerEvent: {}
+[170.315104] (ros1_bridge) StdoutLine: {'line': b'[ 97%] Linking CXX executable static_bridge\n'}
+[170.318310] (-) TimerEvent: {}
+[170.402403] (ros1_bridge) StdoutLine: {'line': b'[ 97%] Linking CXX executable action_bridge\n'}
+[170.418429] (-) TimerEvent: {}
+[170.518654] (-) TimerEvent: {}
+[170.618943] (-) TimerEvent: {}
+[170.719157] (-) TimerEvent: {}
+[170.789694] (ros1_bridge) StdoutLine: {'line': b'[ 98%] Linking CXX executable parameter_bridge\n'}
+[170.819276] (-) TimerEvent: {}
+[170.919493] (-) TimerEvent: {}
+[171.019816] (-) TimerEvent: {}
+[171.120159] (-) TimerEvent: {}
+[171.220385] (-) TimerEvent: {}
+[171.320642] (-) TimerEvent: {}
+[171.420981] (-) TimerEvent: {}
+[171.521230] (-) TimerEvent: {}
+[171.621512] (-) TimerEvent: {}
+[171.721805] (-) TimerEvent: {}
+[171.822104] (-) TimerEvent: {}
+[171.922402] (-) TimerEvent: {}
+[172.022673] (-) TimerEvent: {}
+[172.122984] (-) TimerEvent: {}
+[172.223246] (-) TimerEvent: {}
+[172.323529] (-) TimerEvent: {}
+[172.423783] (-) TimerEvent: {}
+[172.524121] (-) TimerEvent: {}
+[172.624418] (-) TimerEvent: {}
+[172.724762] (-) TimerEvent: {}
+[172.825105] (-) TimerEvent: {}
+[172.925334] (-) TimerEvent: {}
+[173.025550] (-) TimerEvent: {}
+[173.125770] (-) TimerEvent: {}
+[173.225992] (-) TimerEvent: {}
+[173.326212] (-) TimerEvent: {}
+[173.426452] (-) TimerEvent: {}
+[173.526696] (-) TimerEvent: {}
+[173.552330] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Linking CXX executable dynamic_bridge\n'}
+[173.623029] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Built target static_bridge\n'}
+[173.626845] (-) TimerEvent: {}
+[173.727185] (-) TimerEvent: {}
+[173.778029] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Built target action_bridge\n'}
+[173.827304] (-) TimerEvent: {}
+[173.927675] (-) TimerEvent: {}
+[174.027932] (-) TimerEvent: {}
+[174.078650] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Built target parameter_bridge\n'}
+[174.128152] (-) TimerEvent: {}
+[174.228345] (-) TimerEvent: {}
+[174.328595] (-) TimerEvent: {}
+[174.428926] (-) TimerEvent: {}
+[174.529269] (-) TimerEvent: {}
+[174.629467] (-) TimerEvent: {}
+[174.729663] (-) TimerEvent: {}
+[174.829969] (-) TimerEvent: {}
+[174.930237] (-) TimerEvent: {}
+[175.030432] (-) TimerEvent: {}
+[175.130631] (-) TimerEvent: {}
+[175.230933] (-) TimerEvent: {}
+[175.331237] (-) TimerEvent: {}
+[175.431432] (-) TimerEvent: {}
+[175.531651] (-) TimerEvent: {}
+[175.632029] (-) TimerEvent: {}
+[175.688470] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Built target dynamic_bridge\n'}
+[175.732279] (-) TimerEvent: {}
+[175.832452] (-) TimerEvent: {}
+[175.932689] (-) TimerEvent: {}
+[176.032881] (-) TimerEvent: {}
+[176.133140] (-) TimerEvent: {}
+[176.233302] (-) TimerEvent: {}
+[176.333465] (-) TimerEvent: {}
+[176.433678] (-) TimerEvent: {}
+[176.533930] (-) TimerEvent: {}
+[176.634192] (-) TimerEvent: {}
+[176.734358] (-) TimerEvent: {}
+[176.834548] (-) TimerEvent: {}
+[176.934742] (-) TimerEvent: {}
+[177.034931] (-) TimerEvent: {}
+[177.135255] (-) TimerEvent: {}
+[177.235446] (-) TimerEvent: {}
+[177.335711] (-) TimerEvent: {}
+[177.435976] (-) TimerEvent: {}
+[177.536190] (-) TimerEvent: {}
+[177.636432] (-) TimerEvent: {}
+[177.736693] (-) TimerEvent: {}
+[177.836945] (-) TimerEvent: {}
+[177.937190] (-) TimerEvent: {}
+[178.037349] (-) TimerEvent: {}
+[178.137624] (-) TimerEvent: {}
+[178.237890] (-) TimerEvent: {}
+[178.338152] (-) TimerEvent: {}
+[178.438407] (-) TimerEvent: {}
+[178.538592] (-) TimerEvent: {}
+[178.638854] (-) TimerEvent: {}
+[178.739117] (-) TimerEvent: {}
+[178.839377] (-) TimerEvent: {}
+[178.939621] (-) TimerEvent: {}
+[179.039881] (-) TimerEvent: {}
+[179.140183] (-) TimerEvent: {}
+[179.240352] (-) TimerEvent: {}
+[179.340532] (-) TimerEvent: {}
+[179.440792] (-) TimerEvent: {}
+[179.541042] (-) TimerEvent: {}
+[179.641205] (-) TimerEvent: {}
+[179.741454] (-) TimerEvent: {}
+[179.841620] (-) TimerEvent: {}
+[179.941782] (-) TimerEvent: {}
+[180.042024] (-) TimerEvent: {}
+[180.142214] (-) TimerEvent: {}
+[180.242563] (-) TimerEvent: {}
+[180.342802] (-) TimerEvent: {}
+[180.443044] (-) TimerEvent: {}
+[180.543303] (-) TimerEvent: {}
+[180.643549] (-) TimerEvent: {}
+[180.743800] (-) TimerEvent: {}
+[180.844107] (-) TimerEvent: {}
+[180.944314] (-) TimerEvent: {}
+[181.044507] (-) TimerEvent: {}
+[181.144672] (-) TimerEvent: {}
+[181.244925] (-) TimerEvent: {}
+[181.345096] (-) TimerEvent: {}
+[181.445355] (-) TimerEvent: {}
+[181.545536] (-) TimerEvent: {}
+[181.645768] (-) TimerEvent: {}
+[181.745915] (-) TimerEvent: {}
+[181.846176] (-) TimerEvent: {}
+[181.946324] (-) TimerEvent: {}
+[182.046476] (-) TimerEvent: {}
+[182.146650] (-) TimerEvent: {}
+[182.246821] (-) TimerEvent: {}
+[182.347109] (-) TimerEvent: {}
+[182.447260] (-) TimerEvent: {}
+[182.547503] (-) TimerEvent: {}
+[182.647687] (-) TimerEvent: {}
+[182.747942] (-) TimerEvent: {}
+[182.848185] (-) TimerEvent: {}
+[182.948335] (-) TimerEvent: {}
+[183.048519] (-) TimerEvent: {}
+[183.148764] (-) TimerEvent: {}
+[183.249006] (-) TimerEvent: {}
+[183.349198] (-) TimerEvent: {}
+[183.449351] (-) TimerEvent: {}
+[183.549535] (-) TimerEvent: {}
+[183.649765] (-) TimerEvent: {}
+[183.750002] (-) TimerEvent: {}
+[183.850256] (-) TimerEvent: {}
+[183.950413] (-) TimerEvent: {}
+[184.050600] (-) TimerEvent: {}
+[184.150782] (-) TimerEvent: {}
+[184.251016] (-) TimerEvent: {}
+[184.351274] (-) TimerEvent: {}
+[184.451510] (-) TimerEvent: {}
+[184.551694] (-) TimerEvent: {}
+[184.651936] (-) TimerEvent: {}
+[184.752256] (-) TimerEvent: {}
+[184.852414] (-) TimerEvent: {}
+[184.952596] (-) TimerEvent: {}
+[185.052834] (-) TimerEvent: {}
+[185.153090] (-) TimerEvent: {}
+[185.253378] (-) TimerEvent: {}
+[185.353622] (-) TimerEvent: {}
+[185.453852] (-) TimerEvent: {}
+[185.554088] (-) TimerEvent: {}
+[185.654342] (-) TimerEvent: {}
+[185.754513] (-) TimerEvent: {}
+[185.854772] (-) TimerEvent: {}
+[185.955022] (-) TimerEvent: {}
+[186.055238] (-) TimerEvent: {}
+[186.155461] (-) TimerEvent: {}
+[186.255654] (-) TimerEvent: {}
+[186.355850] (-) TimerEvent: {}
+[186.456103] (-) TimerEvent: {}
+[186.556249] (-) TimerEvent: {}
+[186.656481] (-) TimerEvent: {}
+[186.756721] (-) TimerEvent: {}
+[186.856954] (-) TimerEvent: {}
+[186.957219] (-) TimerEvent: {}
+[187.057378] (-) TimerEvent: {}
+[187.157534] (-) TimerEvent: {}
+[187.257733] (-) TimerEvent: {}
+[187.357969] (-) TimerEvent: {}
+[187.458206] (-) TimerEvent: {}
+[187.558354] (-) TimerEvent: {}
+[187.658499] (-) TimerEvent: {}
+[187.758676] (-) TimerEvent: {}
+[187.858909] (-) TimerEvent: {}
+[187.959144] (-) TimerEvent: {}
+[188.059387] (-) TimerEvent: {}
+[188.159537] (-) TimerEvent: {}
+[188.259714] (-) TimerEvent: {}
+[188.359976] (-) TimerEvent: {}
+[188.460279] (-) TimerEvent: {}
+[188.560448] (-) TimerEvent: {}
+[188.660597] (-) TimerEvent: {}
+[188.760783] (-) TimerEvent: {}
+[188.860938] (-) TimerEvent: {}
+[188.961151] (-) TimerEvent: {}
+[189.061313] (-) TimerEvent: {}
+[189.161465] (-) TimerEvent: {}
+[189.261661] (-) TimerEvent: {}
+[189.361945] (-) TimerEvent: {}
+[189.462149] (-) TimerEvent: {}
+[189.562307] (-) TimerEvent: {}
+[189.662469] (-) TimerEvent: {}
+[189.762709] (-) TimerEvent: {}
+[189.862960] (-) TimerEvent: {}
+[189.963208] (-) TimerEvent: {}
+[190.063370] (-) TimerEvent: {}
+[190.163641] (-) TimerEvent: {}
+[190.263881] (-) TimerEvent: {}
+[190.364146] (-) TimerEvent: {}
+[190.464299] (-) TimerEvent: {}
+[190.564453] (-) TimerEvent: {}
+[190.664700] (-) TimerEvent: {}
+[190.764936] (-) TimerEvent: {}
+[190.865209] (-) TimerEvent: {}
+[190.965464] (-) TimerEvent: {}
+[191.065645] (-) TimerEvent: {}
+[191.165890] (-) TimerEvent: {}
+[191.266155] (-) TimerEvent: {}
+[191.366332] (-) TimerEvent: {}
+[191.466546] (-) TimerEvent: {}
+[191.566776] (-) TimerEvent: {}
+[191.667017] (-) TimerEvent: {}
+[191.767219] (-) TimerEvent: {}
+[191.867368] (-) TimerEvent: {}
+[191.967651] (-) TimerEvent: {}
+[192.067797] (-) TimerEvent: {}
+[192.168026] (-) TimerEvent: {}
+[192.268297] (-) TimerEvent: {}
+[192.368532] (-) TimerEvent: {}
+[192.468779] (-) TimerEvent: {}
+[192.568927] (-) TimerEvent: {}
+[192.669169] (-) TimerEvent: {}
+[192.769437] (-) TimerEvent: {}
+[192.869664] (-) TimerEvent: {}
+[192.969904] (-) TimerEvent: {}
+[193.070144] (-) TimerEvent: {}
+[193.170425] (-) TimerEvent: {}
+[193.270611] (-) TimerEvent: {}
+[193.370850] (-) TimerEvent: {}
+[193.471099] (-) TimerEvent: {}
+[193.571371] (-) TimerEvent: {}
+[193.671631] (-) TimerEvent: {}
+[193.771855] (-) TimerEvent: {}
+[193.872103] (-) TimerEvent: {}
+[193.972263] (-) TimerEvent: {}
+[194.072415] (-) TimerEvent: {}
+[194.172668] (-) TimerEvent: {}
+[194.272932] (-) TimerEvent: {}
+[194.373087] (-) TimerEvent: {}
+[194.473231] (-) TimerEvent: {}
+[194.573378] (-) TimerEvent: {}
+[194.673550] (-) TimerEvent: {}
+[194.773722] (-) TimerEvent: {}
+[194.874003] (-) TimerEvent: {}
+[194.974257] (-) TimerEvent: {}
+[195.007704] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Linking CXX executable test_convert_generic\n'}
+[195.074347] (-) TimerEvent: {}
+[195.174529] (-) TimerEvent: {}
+[195.274724] (-) TimerEvent: {}
+[195.374971] (-) TimerEvent: {}
+[195.475245] (-) TimerEvent: {}
+[195.575431] (-) TimerEvent: {}
+[195.675613] (-) TimerEvent: {}
+[195.775769] (-) TimerEvent: {}
+[195.876021] (-) TimerEvent: {}
+[195.976210] (-) TimerEvent: {}
+[196.076372] (-) TimerEvent: {}
+[196.176563] (-) TimerEvent: {}
+[196.276816] (-) TimerEvent: {}
+[196.377078] (-) TimerEvent: {}
+[196.477352] (-) TimerEvent: {}
+[196.577546] (-) TimerEvent: {}
+[196.677844] (-) TimerEvent: {}
+[196.778130] (-) TimerEvent: {}
+[196.878473] (-) TimerEvent: {}
+[196.978723] (-) TimerEvent: {}
+[197.078975] (-) TimerEvent: {}
+[197.179205] (-) TimerEvent: {}
+[197.256683] (ros1_bridge) StdoutLine: {'line': b'[ 99%] Built target test_convert_generic\n'}
+[197.279290] (-) TimerEvent: {}
+[197.379484] (-) TimerEvent: {}
+[197.479702] (-) TimerEvent: {}
+[197.552984] (ros1_bridge) StdoutLine: {'line': b'[100%] Linking CXX executable test_ros2_to_ros1_serialization\n'}
+[197.579818] (-) TimerEvent: {}
+[197.680068] (-) TimerEvent: {}
+[197.780230] (-) TimerEvent: {}
+[197.880397] (-) TimerEvent: {}
+[197.980584] (-) TimerEvent: {}
+[198.080833] (-) TimerEvent: {}
+[198.181090] (-) TimerEvent: {}
+[198.281250] (-) TimerEvent: {}
+[198.381413] (-) TimerEvent: {}
+[198.481610] (-) TimerEvent: {}
+[198.581866] (-) TimerEvent: {}
+[198.682141] (-) TimerEvent: {}
+[198.782312] (-) TimerEvent: {}
+[198.882501] (-) TimerEvent: {}
+[198.982735] (-) TimerEvent: {}
+[199.083024] (-) TimerEvent: {}
+[199.183264] (-) TimerEvent: {}
+[199.283435] (-) TimerEvent: {}
+[199.383632] (-) TimerEvent: {}
+[199.483915] (-) TimerEvent: {}
+[199.584168] (-) TimerEvent: {}
+[199.684324] (-) TimerEvent: {}
+[199.784508] (-) TimerEvent: {}
+[199.818057] (ros1_bridge) StdoutLine: {'line': b'[100%] Built target test_ros2_to_ros1_serialization\n'}
+[199.846638] (ros1_bridge) CommandEnded: {'returncode': 0}
+[199.876274] (ros1_bridge) JobProgress: {'identifier': 'ros1_bridge', 'progress': 'install'}
+[199.884669] (-) TimerEvent: {}
+[199.896903] (ros1_bridge) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ros-humble-ros1-bridge/build/ros1_bridge'], 'cwd': '/ros-humble-ros1-bridge/build/ros1_bridge', 'env': OrderedDict([('ADD_ros_tutorials', '1'), ('ROS_PACKAGE_PATH', '/ros_tutorials/install/ros_tutorials/share:/ros_tutorials/install/turtlesim/share:/ros_tutorials/install/rospy_tutorials/share:/ros_tutorials/install/roscpp_tutorials/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ros-humble-ros1-bridge/src/ros1_bridge'), ('ROS_PYTHON_VERSION', '3'), ('MAKEFLAGS', '-j 28'), ('COLCON_PREFIX_PATH', '/ros_tutorials/install'), ('ROS_DISTRO', 'humble'), ('ADD_octomap_msgs', '0'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/ros_tutorials/install/ros_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/ros_tutorials/lib/pkgconfig:/ros_tutorials/install/turtlesim/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/turtlesim/lib/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/rospy_tutorials/lib/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/x86_64-linux-gnu/pkgconfig:/ros_tutorials/install/roscpp_tutorials/lib/pkgconfig'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ADD_grid_map', '0'), ('ADD_example_custom_msgs', '0'), ('PWD', '/ros-humble-ros1-bridge/build/ros1_bridge'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/ros_tutorials/install/turtlesim/lib/python3/dist-packages:/ros_tutorials/install/rospy_tutorials/lib/python3/dist-packages:/ros_tutorials/install/roscpp_tutorials/lib/python3/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/ros_tutorials/install/turtlesim:/ros_tutorials/install/rospy_tutorials:/ros_tutorials/install/roscpp_tutorials')]), 'shell': False}
+[199.909570] (ros1_bridge) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[199.912259] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/library_path.sh\n'}
+[199.912877] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/library_path.dsv\n'}
+[199.913351] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/pythonpath.sh\n'}
+[199.913784] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/pythonpath.dsv\n'}
+[199.914291] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge-0.10.3-py3.10.egg-info\n'}
+[199.914545] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge-0.10.3-py3.10.egg-info/dependency_links.txt\n'}
+[199.914765] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge-0.10.3-py3.10.egg-info/SOURCES.txt\n'}
+[199.914904] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge-0.10.3-py3.10.egg-info/top_level.txt\n'}
+[199.915075] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge-0.10.3-py3.10.egg-info/PKG-INFO\n'}
+[199.915534] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge\n'}
+[199.915768] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge/__init__.py\n'}
+[199.984827] (-) TimerEvent: {}
+[200.000485] (ros1_bridge) StdoutLine: {'line': b"Listing '/ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge'...\n"}
+[200.000615] (ros1_bridge) StdoutLine: {'line': b"Compiling '/ros-humble-ros1-bridge/install/ros1_bridge/local/lib/python3.10/dist-packages/ros1_bridge/__init__.py'...\n"}
+[200.004890] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ament_index/resource_index/package_run_dependencies/ros1_bridge\n'}
+[200.005182] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ament_index/resource_index/parent_prefix_path/ros1_bridge\n'}
+[200.007104] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.sh\n'}
+[200.007229] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/ament_prefix_path.dsv\n'}
+[200.007813] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/path.sh\n'}
+[200.008060] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/environment/path.dsv\n'}
+[200.008319] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/local_setup.bash\n'}
+[200.008614] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/local_setup.sh\n'}
+[200.008927] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/local_setup.zsh\n'}
+[200.009200] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/local_setup.dsv\n'}
+[200.009465] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/package.dsv\n'}
+[200.009952] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ament_index/resource_index/packages/ros1_bridge\n'}
+[200.010331] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_package.cmake\n'}
+[200.010650] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_interface_packages.cmake\n'}
+[200.011093] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[200.011562] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[200.012029] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig.cmake\n'}
+[200.012331] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/ros1_bridgeConfig-version.cmake\n'}
+[200.012629] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/package.xml\n'}
+[200.013023] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge_1_to_2\n'}
+[200.014395] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge_1_to_2" to ""\n'}
+[200.014495] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge_2_to_1\n'}
+[200.016606] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge_2_to_1" to ""\n'}
+[200.016660] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge\n'}
+[200.018698] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/simple_bridge" to ""\n'}
+[200.018751] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/libros1_bridge.so\n'}
+[200.075615] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/libros1_bridge.so" to ""\n'}
+[200.075735] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/static_bridge\n'}
+[200.075869] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/static_bridge" to ""\n'}
+[200.075901] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/action_bridge\n'}
+[200.076103] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/action_bridge" to ""\n'}
+[200.076185] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/parameter_bridge\n'}
+[200.076416] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/parameter_bridge" to ""\n'}
+[200.076492] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/dynamic_bridge\n'}
+[200.076875] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/dynamic_bridge" to ""\n'}
+[200.076984] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/test_ros2_client_cpp\n'}
+[200.079033] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/test_ros2_client_cpp" to ""\n'}
+[200.079149] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/test_ros2_server_cpp\n'}
+[200.081711] (ros1_bridge) StdoutLine: {'line': b'-- Set runtime path of "/ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/test_ros2_server_cpp" to ""\n'}
+[200.082407] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/lib/ros1_bridge/generate_factories/ros1_bridge_generate_factories\n'}
+[200.082743] (ros1_bridge) StdoutLine: {'line': b'-- Up-to-date: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake\n'}
+[200.082861] (ros1_bridge) StdoutLine: {'line': b'-- Up-to-date: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_interface_packages.cmake\n'}
+[200.082908] (ros1_bridge) StdoutLine: {'line': b'-- Up-to-date: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/cmake/find_ros1_package.cmake\n'}
+[200.083017] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include\n'}
+[200.083140] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge\n'}
+[200.083291] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/convert_decl.hpp\n'}
+[200.083327] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/factory.hpp\n'}
+[200.083363] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/convert_builtin_interfaces.hpp\n'}
+[200.083396] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/action_factory.hpp\n'}
+[200.083429] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/bridge.hpp\n'}
+[200.083461] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/factory_interface.hpp\n'}
+[200.083501] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/include/ros1_bridge/builtin_interfaces_factories.hpp\n'}
+[200.084915] (-) TimerEvent: {}
+[200.085176] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource\n'}
+[200.085990] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource/get_factory.cpp.em\n'}
+[200.086575] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource/get_mappings.cpp.em\n'}
+[200.087489] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource/pkg_factories.hpp.em\n'}
+[200.087654] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource/interface_factories.cpp.em\n'}
+[200.087981] (ros1_bridge) StdoutLine: {'line': b'-- Installing: /ros-humble-ros1-bridge/install/ros1_bridge/share/ros1_bridge/resource/pkg_factories.cpp.em\n'}
+[200.090276] (ros1_bridge) CommandEnded: {'returncode': 0}
+[200.185495] (-) TimerEvent: {}
+[200.212682] (ros1_bridge) JobEnded: {'identifier': 'ros1_bridge', 'rc': 0}
+[200.214160] (-) EventReactorShutdown: {}

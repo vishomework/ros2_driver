@@ -1,4 +1,4 @@
-docker build -t yutou/ros2_driver:latest .
+docker build -t yutou/ros2_driver:latest . 
 
 docker image prune -f  # 强制清理none镜像
 

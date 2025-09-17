@@ -47,6 +47,17 @@ RUN groupadd --gid $USER_GID $USERNAME && \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
+
+RUN mkdir -p packages/AIRY && \
+    cd packages/AIRY && \
+    git clone https://github.com/RoboSense-LiDAR/rslidar_sdk.git && \
+    git clone https://github.com/RoboSense-LiDAR/rslidar_msg.git && \
+    cd ../ && \
+# 清理本地缓存后重新克隆
+    git clone --depth=1 https://github.com/wyq123-star/oradar_ros.git && \
+    cd AIRY/rslidar_sdk && \
+    git submodule init && \
+    git submodule update 
 # # 创建 Fish 配置目录
 # RUN mkdir -p .config/fish/functions && \
 #     curl -sL https://git.io/fisher > .config/fish/functions/fisher.fish
@@ -63,11 +74,15 @@ ENV ROBOSENSE_AIRY_BASH="~/ros2_ws/packages/AIRY/install/setup.bash"
 ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 
 # # 为bash用户自动加载ROS环境
-# RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc
+RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
+    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
+
+    # cd ~/packages && \
+    # colcon build
     # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROS1_BRIDGE_BASH" >> /home/$USERNAME/.bashrc 
-#     echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
+    
 #     echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
 #     echo "source /home/yutou/packages/ws_livox/install/local_setup.bash" >> /home/$USERNAME/.bashrc
 
@@ -77,7 +92,7 @@ ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 #     echo 'source ~/ros2_ws/.config/fish/completions/ros2.fish' >> /home/$USERNAME/.config/fish/config.fish
 
 
-WORKDIR /home/$USERNAME
+WORKDIR /home/$USERNAME 
 
 # 默认启动命令
 CMD ["/usr/bin/bash"]

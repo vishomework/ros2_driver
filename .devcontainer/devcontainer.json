@@ -1,5 +1,5 @@
 {
-  "name": "ros2-container",
+  "name": "ros2-driver",
   "dockerComposeFile": "docker-compose.yml",
   "service": "ros2-service",
   "workspaceFolder": "/home/yutou/ros2_ws",

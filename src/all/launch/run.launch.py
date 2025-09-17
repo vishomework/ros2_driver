@@ -33,6 +33,16 @@ def generate_launch_description():
             )
         )
     )
+
+    tf_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(
+                get_package_share_directory('all'),
+                'launch',
+                'tf.launch.py',
+            )
+        )
+    )
     # 简单地延迟启动 ros1_bridge_node
     # delayed_bridge = TimerAction(
     #     period=5.0, # 延迟5秒。这个时间需要根据rslidar_sdk实际启动时间调整
@@ -43,4 +53,5 @@ def generate_launch_description():
         airy_launch,
         # delayed_bridge,
         ms200_launch,
+        tf_launch,
     ])

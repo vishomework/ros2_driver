@@ -63,7 +63,7 @@ ENV ROBOSENSE_AIRY_BASH="~/ros2_ws/packages/AIRY/install/setup.bash"
 ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 
 # # 为bash用户自动加载ROS环境
-RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc
+# RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc
     # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc && \
     # echo "source $ROS1_BRIDGE_BASH" >> /home/$USERNAME/.bashrc 

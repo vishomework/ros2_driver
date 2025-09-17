@@ -1,0 +1,14 @@
+[Unit]
+Description=Foxglove Bridge Service
+After=network.target
+
+[Service]
+Type=simple
+User=fishros
+WorkingDirectory=/home/fishros
+ExecStart=/bin/bash -c "source /opt/ros/humble/setup.bash && ros2 launch foxglove_bridge foxglove_bridge_launch.xml"
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

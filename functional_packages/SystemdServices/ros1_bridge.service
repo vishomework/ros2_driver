@@ -7,7 +7,7 @@ Wants=network.target
 Type=simple
 User=fishros # 替换为你的用户名
 WorkingDirectory=/home/fishros # 替换为你的home目录路径
-ExecStart=/bin/bash -c "source /opt/ros/humble/setup.bash && source /path/to/your/ROS1-Ros2_Bridge/install/setup.bash && ros2 run ros1_bridge dynamic_bridge --bridge-all-topics"
+ExecStart=/bin/bash -c "source /opt/ros/humble/setup.bash && source /path/to/your/ROS1-Ros2_Bridge/install/local_setup.bash && ros2 run ros1_bridge dynamic_bridge --bridge-all-topics"
 Restart=on-failure # 如果进程意外退出，自动重启
 RestartSec=5s
 

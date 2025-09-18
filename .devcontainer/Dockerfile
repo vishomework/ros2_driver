@@ -7,9 +7,9 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 
-RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
-    sudo apt-get update && \
-    sudo apt-get install -y ros-noetic-autolabor
+# RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
+#     sudo apt-get update && \
+#     sudo apt-get install -y ros-noetic-autolabor
 
 RUN apt-get update && \
     apt-get install -y \
@@ -54,7 +54,7 @@ RUN mkdir -p packages/AIRY && \
     git clone https://github.com/RoboSense-LiDAR/rslidar_msg.git && \
     cd ../ && \
 # 清理本地缓存后重新克隆
-    git clone --depth=1 https://github.com/wyq123-star/oradar_ros.git && \
+    git clone https://github.com/wyq123-star/oradar_ros.git && \
     cd AIRY/rslidar_sdk && \
     git submodule init && \
     git submodule update 
@@ -66,21 +66,26 @@ RUN mkdir -p packages/AIRY && \
 # RUN /usr/bin/fish -c "fisher install edc/bass"
 
 ENV ROS2_DISTRO=humble
-ENV ROS1_DISTRO=noetic
+# ENV ROS1_DISTRO=noetic
 ENV ROS2_SETUP_BASH="/opt/ros/humble/setup.bash"
-ENV ROS1_SETUP_BASH="/opt/ros/noetic/setup.bash"
+# ENV ROS1_SETUP_BASH="/opt/ros/noetic/setup.bash"
 # ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-ENV ROBOSENSE_AIRY_BASH="~/ros2_ws/packages/AIRY/install/setup.bash"
-ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
+ENV ROBOSENSE_AIRY_BASH="~/packages/install/setup.bash"
+# ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 
 # # 为bash用户自动加载ROS环境
 RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc
-
+    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
+    echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc 
+    
+WORKDIR /home/$USERNAME/packages
+RUN ["/bin/bash", "-c", "source /opt/ros/$ROS2_DISTRO/setup.bash && colcon build"]
+# WORKDIR /home/$USERNAME/ros2_ws
+# RUN ["/bin/bash", "-c", "source /opt/ros/$ROS2_DISTRO/setup.bash && colcon build"]
     # cd ~/packages && \
     # colcon build
     # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    # echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc && \
+    
     # echo "source $ROS1_BRIDGE_BASH" >> /home/$USERNAME/.bashrc 
     
 #     echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
@@ -92,7 +97,7 @@ RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
 #     echo 'source ~/ros2_ws/.config/fish/completions/ros2.fish' >> /home/$USERNAME/.config/fish/config.fish
 
 
-WORKDIR /home/$USERNAME 
+
 
 # 默认启动命令
 CMD ["/usr/bin/bash"]

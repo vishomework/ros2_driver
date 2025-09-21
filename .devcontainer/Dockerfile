@@ -58,12 +58,6 @@ RUN mkdir -p packages/AIRY && \
     cd AIRY/rslidar_sdk && \
     git submodule init && \
     git submodule update 
-# # 创建 Fish 配置目录
-# RUN mkdir -p .config/fish/functions && \
-#     curl -sL https://git.io/fisher > .config/fish/functions/fisher.fish
-    
-# # 安装 bass 插件
-# RUN /usr/bin/fish -c "fisher install edc/bass"
 
 ENV ROS2_DISTRO=humble
 # ENV ROS1_DISTRO=noetic

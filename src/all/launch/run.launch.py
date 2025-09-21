@@ -7,12 +7,6 @@ import os
 
 def generate_launch_description():
 
-    # ros1_bridge_node = Node(
-    #     package='ros1_bridge',
-    #     executable='dynamic_bridge',
-    #     name='ros1_bridge_node',
-    #     arguments=['--bridge-all-topics'],
-    # )
 
     airy_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
@@ -21,7 +15,10 @@ def generate_launch_description():
                 'launch',
                 'humble_start.py',
             )
-        )
+        ),
+        launch_arguments={
+            'config_file': '~/ros2_driver/src/all/config/config.yaml'
+        }.items()
     )
 
     ms200_launch = IncludeLaunchDescription(
@@ -43,15 +40,9 @@ def generate_launch_description():
             )
         )
     )
-    # 简单地延迟启动 ros1_bridge_node
-    # delayed_bridge = TimerAction(
-    #     period=5.0, # 延迟5秒。这个时间需要根据rslidar_sdk实际启动时间调整
-    #     actions=[ros1_bridge_node]
-    # )
 
     return LaunchDescription([
         airy_launch,
-        # delayed_bridge,
         ms200_launch,
         tf_launch,
     ])

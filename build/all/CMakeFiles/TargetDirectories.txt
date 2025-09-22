@@ -1,0 +1,9 @@
+/home/yutou/ros2_ws/build/all/CMakeFiles/uninstall.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/all_uninstall.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/test.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/edit_cache.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/rebuild_cache.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/list_install_components.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/install.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/install/local.dir
+/home/yutou/ros2_ws/build/all/CMakeFiles/install/strip.dir

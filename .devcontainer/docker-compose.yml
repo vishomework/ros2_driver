@@ -1,9 +1,7 @@
 version: '3'
 services:
   ros2-service:
-    # build:
-    #   context: .  # 当前目录为上下文
-    #   dockerfile: ./Dockerfile
+    build: .
     image: yutou/ros2_driver:latest  # 替换为你的镜像名
     container_name: ros2_driver
 

@@ -1,6 +1,30 @@
 # Repository ROS2_DRIVER
 
-## Part : Related Functional Packages
+## Part One : Sensor Drivers
+
+**⭐️The intergration work of the driver package is completed by @wyq123-star**
+
+**Author: Xiaomo Wen $\qquad$ Date : 2025-09-21**
+
+**Introduction : Container `ros2_driver` is a container that integrates multiple sensor drivers, and now supports the RoboSense series and MS200.**
+
+If your vscode has the extension `devcontainer`, when you open the folder for the first time, choose `Reopen in Container` can accomplish the image building & container creation automatically.
+
+>There is a problem that you should pay attention to: for  `devcontainer` and `docker-compose`, you can only choose one ( Default `devcontainer` ). If you want to use `docker-compose` to build image and create a container, you should use `docker-compose -p ros2-driver-project up -d` to avoid covering the containers created before, even they don't belong to this repository.
+
+#### In container:
+```bash
+cd ros2_ws/
+source /opt/ros/humble/setup.bash
+colcon build
+source install/setup.bash
+```
+
+Then, use `ros2 launch all run.launch.py` to launch the drivers. Normally, this version of code can driver `robosense_airy` and `ms200`, then bring up the topic `/livox_lidar`, `/livox_imu`, `/MS200/scan` and  `/tf`. **Make sure your hardware device has been properly.**
+
+>[notice] The iPv4 address of robosense lidar in UP70 is `192.168.1.102`, with the subnet mask `255.255.255.0`. Manually set these parameters before running the code. 
+
+## Part Two : Related Functional Packages
 **Author : Xiaomo Wen $\qquad$ Date : 2025-09-17** 
 
 ### 1. ROS1-ROS2 Bridge

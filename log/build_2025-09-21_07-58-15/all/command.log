@@ -1,0 +1,6 @@
+Invoking command in '/home/yutou/ros2_ws/build/all': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/src/all -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/all
+Invoked command in '/home/yutou/ros2_ws/build/all' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/yutou/ros2_ws/src/all -DCMAKE_INSTALL_PREFIX=/home/yutou/ros2_ws/install/all
+Invoking command in '/home/yutou/ros2_ws/build/all': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/all -- -j28 -l28
+Invoked command in '/home/yutou/ros2_ws/build/all' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yutou/ros2_ws/build/all -- -j28 -l28
+Invoking command in '/home/yutou/ros2_ws/build/all': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/all
+Invoked command in '/home/yutou/ros2_ws/build/all' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yutou/ros2_ws/build/all

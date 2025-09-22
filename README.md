@@ -2,7 +2,7 @@
 
 ## Part One : Sensor Drivers
 
-**⭐️The intergration work of the driver package is completed by @wyq123-star**
+**⭐️The intergration work of the driver package is completed by [@wyq123-star](https://github.com/wyq123-star)**
 
 **Author: Xiaomo Wen $\qquad$ Date : 2025-09-21**
 

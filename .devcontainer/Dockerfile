@@ -19,6 +19,7 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-robot-state-publisher \
         fish \
         gedit \
+        ros-humble-joy \
         ros-humble-rqt-tf-tree \
         ros-humble-rmw-cyclonedds-cpp \
         ros-humble-foxglove-bridge \

@@ -6,14 +6,11 @@ ARG USERNAME=yutou
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
-
-# RUN echo "deb [trusted=yes arch=amd64] http://deb.repo.autolabor.com.cn jammy main" | sudo tee /etc/apt/sources.list.d/autolabor.list && \
-#     sudo apt-get update && \
-#     sudo apt-get install -y ros-noetic-autolabor
-
+# 安装系统依赖包（以root身份）
 RUN apt-get update && \
     apt-get install -y \
         wget \
+        git \
         ros-humble-nav2-bringup \
         ros-$ROS_DISTRO-joint-state-publisher-gui \
         ros-$ROS_DISTRO-robot-state-publisher \
@@ -27,80 +24,60 @@ RUN apt-get update && \
         curl \
         sudo \
         libpcap-dev \
-        pip && \
-        pip install pyserial \
-        rosbags && \
+        python3-pip && \
+    pip3 install pyserial rosbags && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# ------------------------------
 # 创建用户并配置权限
-# ------------------------------
 RUN groupadd --gid $USER_GID $USERNAME && \
     useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
     echo "$USERNAME ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
     usermod -a -G dialout $USERNAME
-    # usermod -a -G dialout $USERNAME
-# ------------------------------
-# 安装 Fisher 和 bass（在用户目录下）
-# ------------------------------
-# 切换到用户目录安装
+
+# 设置工作目录并克隆代码（以root身份，确保有权限）
+WORKDIR /home/$USERNAME
+
+RUN mkdir -p packages && \
+    cd packages && \
+    git clone https://github.com/wyq123-star/oradar_ros.git && \
+    mkdir -p AIRY && \
+    cd AIRY && \
+    git clone https://github.com/RoboSense-LiDAR/rslidar_sdk.git && \
+    git clone https://github.com/RoboSense-LiDAR/rslidar_msg.git
+
+# 初始化并更新子模块（以root身份）
+RUN cd /home/$USERNAME/packages/AIRY/rslidar_sdk && \
+    git submodule init && \
+    git submodule update
+
+# 切换到非root用户
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-
-RUN mkdir -p packages/AIRY && \
-    cd packages/AIRY && \
-    git clone https://github.com/RoboSense-LiDAR/rslidar_sdk.git && \
-    git clone https://github.com/RoboSense-LiDAR/rslidar_msg.git && \
-    cd ../ && \
-# 清理本地缓存后重新克隆
-    git clone https://github.com/wyq123-star/oradar_ros.git && \
-    cd AIRY/rslidar_sdk && \
-    git submodule init && \
-    git submodule update 
-
+# 设置环境变量
 ENV ROS2_DISTRO=humble
-# ENV ROS1_DISTRO=noetic
 ENV ROS2_SETUP_BASH="/opt/ros/humble/setup.bash"
-# ENV ROS1_SETUP_BASH="/opt/ros/noetic/setup.bash"
-# ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-ENV ROBOSENSE_AIRY_BASH="~/packages/install/setup.bash"
-# ENV ROS1_BRIDGE_BASH="~/ros2_ws/packages/ros_bridge_ws/install/setup.bash"
 
-# # 为bash用户自动加载ROS环境
+# 配置bashrc
 RUN echo "source $ROS2_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    echo "source /home/yutou/ros2_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
-    echo "source $ROBOSENSE_AIRY_BASH" >> /home/$USERNAME/.bashrc 
-    
+    echo "export ROS_LOCALHOST_ONLY=2" >> /home/$USERNAME/.bashrc
+
+# --- 修复权限问题的关键步骤 ---
+# 确保在用户切换后，修正工作目录的所有权
+USER root
+RUN chown -R $USERNAME:$USERNAME /home/$USERNAME/packages
+USER $USERNAME
+# --- 修复结束 ---
+
+# 构建工作空间（使用非root用户）
 WORKDIR /home/$USERNAME/packages
-RUN ["/bin/bash", "-c", "source /opt/ros/$ROS2_DISTRO/setup.bash && colcon build"]
-# WORKDIR /home/$USERNAME/ros2_ws
-# RUN ["/bin/bash", "-c", "source /opt/ros/$ROS2_DISTRO/setup.bash && colcon build"]
-    # cd ~/packages && \
-    # colcon build
-    # echo "source $ROS1_SETUP_BASH" >> /home/$USERNAME/.bashrc && \
-    
-    # echo "source $ROS1_BRIDGE_BASH" >> /home/$USERNAME/.bashrc 
-    
-#     echo "source /home/yutou/packages/lidar_ros_ws/install/setup.bash" >> /home/$USERNAME/.bashrc && \
-#     echo "source /home/yutou/packages/ws_livox/install/local_setup.bash" >> /home/$USERNAME/.bashrc
+RUN bash -c "source /opt/ros/$ROS2_DISTRO/setup.bash && colcon build"
 
-# # # 为fish用户配置ROS环境（可选）
-# RUN echo 'bass source /opt/ros/humble/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
-#     echo 'bass source ~/ros2_ws/install/setup.bash' >> /home/$USERNAME/.config/fish/config.fish && \
-#     echo 'source ~/ros2_ws/.config/fish/completions/ros2.fish' >> /home/$USERNAME/.config/fish/config.fish
+# ... 省略之后的代码 ...
 
-
-
+# 将构建结果添加到bashrc
+RUN echo "source /home/$USERNAME/packages/install/setup.bash" >> /home/$USERNAME/.bashrc
 
 # 默认启动命令
-CMD ["/usr/bin/bash"]
-
-        # ros-humble-gazebo-ros-pkgs \
-        # ros-humble-cartographer \
-        # ros-humble-cartographer-ros \
-        # ros-noetic-ros-core  \
-        # ros-humble-ros1-bridge \
-        # gazebo \
-        # libgazebo-dev \
+CMD ["/bin/bash"]
